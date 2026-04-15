@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Chan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#fcfcfc',
+                        'brand-text': '#111111',
+                        'brand-muted': '#555555',
+                        'brand-border': '#e0e0e0',
+                        'brand-accent': '#0055ff', /* Clean efficient blue */
+                        'brand-surface': '#ffffff'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fcfcfc;
+            color: #111111;
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .clean-card {
+            border: 1px solid #e0e0e0;
+            background: #ffffff;
+            transition: all 0.2s ease;
+        }
+        .clean-card:hover {
+            border-color: #111111;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-brand-accent selection:text-white">
+
+    <script src="./data.js"></script>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-brand-border">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-brand-text">James.</a>
+            <div class="flex items-center space-x-6 text-sm font-medium">
+                <a href="#about" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-about"></a>
+                <a href="#experience" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-experience"></a>
+                <a href="#leadership" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-leadership"></a>
+                <a href="#contact" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-contact"></a>
+                <button id="lang-toggle" onclick="toggleLanguage()" class="text-brand-text border border-brand-border px-3 py-1 rounded hover:bg-gray-50 transition-colors text-xs uppercase tracking-widest"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-4xl mx-auto w-full fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-brand-text" id="hero-name"></h1>
+            <h2 class="text-xl md:text-2xl font-medium text-brand-accent mb-6" id="hero-title"></h2>
+            <p class="max-w-2xl text-lg text-brand-muted leading-relaxed mb-10" id="hero-subtitle"></p>
+            <a href="#experience" class="inline-flex items-center justify-center bg-brand-text text-white px-6 py-3 font-medium hover:bg-black transition-colors" id="hero-cta"></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 border-t border-brand-border bg-brand-surface">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold tracking-tight" id="about-title"></h3>
+            </div>
+            <div class="md:col-span-2">
+                <p class="text-lg leading-relaxed text-brand-muted" id="about-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 border-t border-brand-border">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold tracking-tight" id="experience-title"></h3>
+            </div>
+            <div class="md:col-span-2 space-y-10" id="experience-list">
+                <!-- JS Injected -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-24 px-6 border-t border-brand-border bg-brand-surface">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold tracking-tight" id="leadership-title"></h3>
+            </div>
+            <div class="md:col-span-2 space-y-10" id="leadership-list">
+                <!-- JS Injected -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-brand-border">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold tracking-tight" id="skills-title"></h3>
+            </div>
+            <div class="md:col-span-2">
+                <ul class="space-y-4 text-brand-muted" id="skills-list">
+                    <!-- JS Injected -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-brand-border bg-brand-text text-white">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold tracking-tight" id="contact-title"></h3>
+            </div>
+            <div class="md:col-span-2">
+                <p class="text-lg text-gray-400 mb-8" id="contact-description"></p>
+                <div class="flex flex-col sm:flex-row gap-6 font-medium text-lg">
+                    <a id="contact-email" href="" class="hover:text-brand-accent transition-colors flex items-center gap-2">
+                        <span>Email</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a id="contact-phone" href="" class="hover:text-brand-accent transition-colors flex items-center gap-2">
+                        <span>Phone</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-brand-muted border-t border-brand-border">
+        <p>&copy; <span id="year"></span> HsinChun Chan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        let currentLang = 'en';
+
+        function renderContent() {
+            const data = siteData[currentLang];
+
+            // Nav
+            document.getElementById('nav-about').innerText = data.nav.about;
+            document.getElementById('nav-experience').innerText = data.nav.experience;
+            document.getElementById('nav-leadership').innerText = data.nav.leadership;
+            document.getElementById('nav-contact').innerText = data.nav.contact;
+            document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
+
+            // Hero
+            document.getElementById('hero-name').innerText = data.hero.name;
+            document.getElementById('hero-title').innerText = data.hero.title;
+            document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+            document.getElementById('hero-cta').innerText = data.hero.cta;
+
+            // About
+            document.getElementById('about-title').innerText = data.about.title;
+            document.getElementById('about-description').innerText = data.about.description;
+
+            // Experience
+            document.getElementById('experience-title').innerText = data.experience.title;
+            const expList = document.getElementById('experience-list');
+            expList.innerHTML = '';
+            data.experience.items.forEach(item => {
+                expList.innerHTML += `
+                    <div class="clean-card p-6 rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
+                                <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                            </div>
+                            <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
+                        </div>
+                        <p class="text-brand-muted leading-relaxed text-sm">${item.description}</p>
+                    </div>
+                `;
+            });
+
+            // Leadership
+            document.getElementById('leadership-title').innerText = data.leadership.title;
+            const leadList = document.getElementById('leadership-list');
+            leadList.innerHTML = '';
+            data.leadership.items.forEach(item => {
+                leadList.innerHTML += `
+                    <div class="clean-card p-6 rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
+                                <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                            </div>
+                            <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
+                        </div>
+                        <p class="text-brand-muted leading-relaxed text-sm">${item.description}</p>
+                    </div>
+                `;
+            });
+
+            // Skills
+            document.getElementById('skills-title').innerText = data.skills.title;
+            const skillsList = document.getElementById('skills-list');
+            skillsList.innerHTML = '';
+            data.skills.items.forEach(item => {
+                skillsList.innerHTML += `
+                    <li class="flex items-start gap-3 border-b border-brand-border pb-3 last:border-0">
+                        <svg class="w-5 h-5 text-brand-text flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-brand-text font-medium text-sm leading-relaxed">${item}</span>
+                    </li>
+                `;
+            });
+
+            // Contact
+            document.getElementById('contact-title').innerText = data.contact.title;
+            document.getElementById('contact-description').innerText = data.contact.description;
+            document.getElementById('contact-email').href = "mailto:" + data.contact.email;
+            document.getElementById('contact-email').innerHTML = `<span>${data.contact.email}</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>`;
+            document.getElementById('contact-phone').href = "tel:" + data.contact.phone.replace(/[^0-9+]/g, '');
+            document.getElementById('contact-phone').innerHTML = `<span>${data.contact.phone}</span>`;
+            
+            document.documentElement.lang = currentLang;
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            renderContent();
+        }
+
+        renderContent();
+    </script>
+</body>
+</html>
