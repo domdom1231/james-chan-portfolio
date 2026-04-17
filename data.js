@@ -24,7 +24,7 @@ const siteData = {
         {
           role: "Marketing and Content Intern",
           company: "CET Academic Programs",
-          companyIcon: "cet",
+          companyIcon: "https://i.ibb.co/d0Ktq9dT/8df9bd5cf6c5.png",
           period: "Aug 2025 – Dec 2025",
           summary: "Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.",
           achievements: [
@@ -38,7 +38,7 @@ const siteData = {
         {
           role: "Project Assistant",
           company: "National Center for Theoretical Sciences (NCTS) Mathematics",
-          companyIcon: "ncts",
+          companyIcon: "https://i.ibb.co/tTySJGBh/8d3b3ff64db3.png",
           period: "Feb 2026 – Present",
           summary: "Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.",
           achievements: [
@@ -57,7 +57,7 @@ const siteData = {
         {
           role: "Vice President",
           company: "NTU College of Social Sciences Student Association",
-          companyIcon: "ntu-cssa",
+          companyIcon: "https://i.ibb.co/3yXRr6pX/fc28ae54b762.png",
           period: "2025 – Present",
           summary: "Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.",
           achievements: [
@@ -72,7 +72,7 @@ const siteData = {
         {
           role: "Vice President, PR & Sponsorship",
           company: "NTU Breakdance Club",
-          companyIcon: "ntu-breakdance",
+          companyIcon: "https://i.ibb.co/TBxsVbZF/59a7cb035d9d.png",
           period: "2024 – 2025",
           summary: "Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.",
           achievements: [
@@ -141,7 +141,7 @@ const siteData = {
         {
           role: "Marketing and Content Intern",
           company: "CET Academic Programs",
-          companyIcon: "cet",
+          companyIcon: "https://i.ibb.co/d0Ktq9dT/8df9bd5cf6c5.png",
           period: "2025.08 – 2025.12",
           summary: "於國際教育機構支援行銷與內容營運，工作涵蓋社群內容製作、行銷協作、數據追蹤與雙語溝通。",
           achievements: [
@@ -155,7 +155,7 @@ const siteData = {
         {
           role: "Project Assistant",
           company: "National Center for Theoretical Sciences (NCTS) Mathematics",
-          companyIcon: "ncts",
+          companyIcon: "https://i.ibb.co/tTySJGBh/8d3b3ff64db3.png",
           period: "2026.02 – 至今",
           summary: "支援學術活動與專案行政執行，在需與國內外學者協作的快節奏環境中處理專案與營運細節。",
           achievements: [
@@ -174,7 +174,7 @@ const siteData = {
         {
           role: "副會長",
           company: "國立臺灣大學社科院學生會",
-          companyIcon: "ntu-cssa",
+          companyIcon: "https://i.ibb.co/3yXRr6pX/fc28ae54b762.png",
           period: "2025 – 至今",
           summary: "主導學生福利與校園改善專案，將團隊資源聚焦於具體需求，並與校方進行溝通協調，推動可落地的改善方案。",
           achievements: [
@@ -189,7 +189,7 @@ const siteData = {
         {
           role: "副社長（公關與贊助）",
           company: "國立臺灣大學地板街舞社",
-          companyIcon: "ntu-breakdance",
+          companyIcon: "https://i.ibb.co/TBxsVbZF/59a7cb035d9d.png",
           period: "2024 – 2025",
           summary: "負責活動對外溝通、贊助接洽與宣傳規劃，聚焦於受眾觸及、轉換追蹤與資源整合。",
           achievements: [
