@@ -184,16 +184,24 @@
             const expList = document.getElementById('experience-list');
             expList.innerHTML = '';
             data.experience.items.forEach(item => {
+                const achievements = item.achievements ? `<ul class="list-disc list-inside space-y-1 mt-3 text-brand-muted text-sm">${item.achievements.map(a => `<li>${a}</li>`).join('')}</ul>` : `<p class="text-brand-muted leading-relaxed text-sm">${item.description || ''}</p>`;
+                const icon = item.companyIcon ? `<img src="${item.companyIcon}" class="w-12 h-12 object-contain rounded-sm border border-brand-border mb-3 md:mb-0" alt="${item.company}">` : '';
+                
                 expList.innerHTML += `
                     <div class="clean-card p-6 rounded-sm">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
-                                <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+                            ${icon}
+                            <div class="flex-1">
+                                <div class="flex flex-col md:flex-row md:justify-between">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
+                                        <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                                    </div>
+                                    <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
+                                </div>
                             </div>
-                            <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
                         </div>
-                        <p class="text-brand-muted leading-relaxed text-sm">${item.description}</p>
+                        ${achievements}
                     </div>
                 `;
             });
@@ -203,16 +211,24 @@
             const leadList = document.getElementById('leadership-list');
             leadList.innerHTML = '';
             data.leadership.items.forEach(item => {
+                const achievements = item.achievements ? `<ul class="list-disc list-inside space-y-1 mt-3 text-brand-muted text-sm">${item.achievements.map(a => `<li>${a}</li>`).join('')}</ul>` : `<p class="text-brand-muted leading-relaxed text-sm">${item.description || ''}</p>`;
+                const icon = item.companyIcon ? `<img src="${item.companyIcon}" class="w-12 h-12 object-contain rounded-sm border border-brand-border mb-3 md:mb-0" alt="${item.company}">` : '';
+
                 leadList.innerHTML += `
                     <div class="clean-card p-6 rounded-sm">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
-                                <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
+                            ${icon}
+                            <div class="flex-1">
+                                <div class="flex flex-col md:flex-row md:justify-between">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
+                                        <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
+                                    </div>
+                                    <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
+                                </div>
                             </div>
-                            <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
                         </div>
-                        <p class="text-brand-muted leading-relaxed text-sm">${item.description}</p>
+                        ${achievements}
                     </div>
                 `;
             });
