@@ -1,268 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Chan | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-bg': '#fcfcfc',
-                        'brand-text': '#111111',
-                        'brand-muted': '#555555',
-                        'brand-border': '#e0e0e0',
-                        'brand-accent': '#0055ff', /* Clean efficient blue */
-                        'brand-surface': '#ffffff'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            background-color: #fcfcfc;
-            color: #111111;
-            scroll-behavior: smooth;
-        }
-        .fade-in {
-            animation: fadeIn 0.6s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .clean-card {
-            border: 1px solid #e0e0e0;
-            background: #ffffff;
-            transition: all 0.2s ease;
-        }
-        .clean-card:hover {
-            border-color: #111111;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-        }
-    </style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>James Chan | Portfolio</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ 'brand-bg': '#f7f7f5',
+ 'brand-text': '#111111',
+ 'brand-muted': '#5f5f5b',
+ 'brand-border': '#deded7',
+ 'brand-accent': '#1f4fff',
+ 'brand-surface': '#fbfbf8'
+ },
+ fontFamily: {
+ sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+ },
+ maxWidth: {
+ 'content': '1200px'
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ html { scroll-behavior: smooth; }
+ body {
+ background: #f7f7f5;
+ color: #111111;
+ }
+ .section-divider { border-top: 1px solid #deded7; }
+ .fade-in {
+ animation: fadeIn 0.65s ease-out forwards;
+ }
+ @keyframes fadeIn {
+ from { opacity: 0; transform: translateY(12px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+ .logo-shell {
+ width: 72px;
+ height: 72px;
+ border-radius: 20px;
+ background: rgba(255,255,255,0.8);
+ border: 1px solid rgba(17,17,17,0.08);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;
+ flex-shrink: 0;
+ }
+ .entry-line {
+ position: absolute;
+ left: 35px;
+ top: 88px;
+ bottom: -24px;
+ width: 1px;
+ background: #dfdfd8;
+ }
+ .entry:last-child .entry-line {
+ display: none;
+ }
+ </style>
 </head>
 <body class="antialiased font-sans selection:bg-brand-accent selection:text-white">
+ <script src="./data.js"></script>
 
-    <script src="./data.js"></script>
+ <nav class="fixed inset-x-0 top-0 z-50 bg-brand-bg/85 backdrop-blur-md border-b border-brand-border/80">
+ <div class="max-w-content mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-6">
+ <a href="#" class="text-lg md:text-xl font-semibold tracking-tight text-brand-text">James<span class="text-brand-muted">.</span></a>
+ <div class="flex items-center gap-5 md:gap-7 text-sm font-medium">
+ <a href="#about" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-about"></a>
+ <a href="#experience" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-experience"></a>
+ <a href="#leadership" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-leadership"></a>
+ <a href="#projects" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-projects"></a>
+ <a href="#contact" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-contact"></a>
+ <button id="lang-toggle" onclick="toggleLanguage()" class="text-brand-text border border-brand-border px-3 py-1.5 rounded-full hover:bg-white transition-colors text-xs uppercase tracking-[0.2em]"></button>
+ </div>
+ </div>
+ </nav>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-brand-border">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-brand-text">James.</a>
-            <div class="flex items-center space-x-6 text-sm font-medium">
-                <a href="#about" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-about"></a>
-                <a href="#experience" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-experience"></a>
-                <a href="#leadership" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-leadership"></a>
-                <a href="#contact" class="text-brand-muted hover:text-brand-text hidden md:block transition-colors" id="nav-contact"></a>
-                <button id="lang-toggle" onclick="toggleLanguage()" class="text-brand-text border border-brand-border px-3 py-1 rounded hover:bg-gray-50 transition-colors text-xs uppercase tracking-widest"></button>
-            </div>
-        </div>
-    </nav>
+ <header class="min-h-screen flex items-center pt-28 md:pt-32 px-6 md:px-8">
+ <div class="max-w-content mx-auto w-full fade-in">
+ <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
+ <div class="lg:col-span-8">
+ <div class="text-sm uppercase tracking-[0.24em] text-brand-muted mb-6">Portfolio</div>
+ <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] font-semibold tracking-[-0.05em] mb-6 text-brand-text" id="hero-name"></h1>
+ <h2 class="text-xl md:text-2xl font-medium text-brand-accent mb-6 max-w-3xl" id="hero-title"></h2>
+ <p class="max-w-3xl text-lg md:text-xl text-brand-muted leading-relaxed mb-10" id="hero-subtitle"></p>
+ <div class="flex flex-wrap items-center gap-4">
+ <a href="#experience" class="inline-flex items-center justify-center bg-brand-text text-white px-6 py-3.5 rounded-full font-medium hover:opacity-90 transition-opacity" id="hero-cta"></a>
+ <a href="#projects" class="inline-flex items-center justify-center border border-brand-border px-6 py-3.5 rounded-full font-medium text-brand-text hover:bg-white transition-colors">Selected Work</a>
+ </div>
+ </div>
+ <div class="lg:col-span-4 lg:pl-6">
+ <div class="border-t border-brand-border pt-6">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">Positioning</div>
+ <p class="text-base md:text-lg text-brand-text leading-relaxed">
+ Marketing, communications, and product-adjacent work — with strength in audience insight, cross-functional coordination, and structured execution.
+ </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </header>
 
-    <!-- Hero Section -->
-    <header class="min-h-screen flex items-center pt-20 px-6">
-        <div class="max-w-4xl mx-auto w-full fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-brand-text" id="hero-name"></h1>
-            <h2 class="text-xl md:text-2xl font-medium text-brand-accent mb-6" id="hero-title"></h2>
-            <p class="max-w-2xl text-lg text-brand-muted leading-relaxed mb-10" id="hero-subtitle"></p>
-            <a href="#experience" class="inline-flex items-center justify-center bg-brand-text text-white px-6 py-3 font-medium hover:bg-black transition-colors" id="hero-cta"></a>
-        </div>
-    </header>
+ <section id="about" class="section-divider py-24 md:py-32 px-6 md:px-8 bg-brand-surface">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">01</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="about-title"></h3>
+ </div>
+ <div class="lg:col-span-9 max-w-4xl">
+ <p class="text-lg md:text-[1.35rem] leading-relaxed text-brand-muted" id="about-description"></p>
+ </div>
+ </div>
+ </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 px-6 border-t border-brand-border bg-brand-surface">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="md:col-span-1">
-                <h3 class="text-2xl font-bold tracking-tight" id="about-title"></h3>
-            </div>
-            <div class="md:col-span-2">
-                <p class="text-lg leading-relaxed text-brand-muted" id="about-description"></p>
-            </div>
-        </div>
-    </section>
+ <section id="experience" class="section-divider py-24 md:py-32 px-6 md:px-8">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">02</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="experience-title"></h3>
+ </div>
+ <div class="lg:col-span-9 space-y-14" id="experience-list"></div>
+ </div>
+ </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 px-6 border-t border-brand-border">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="md:col-span-1">
-                <h3 class="text-2xl font-bold tracking-tight" id="experience-title"></h3>
-            </div>
-            <div class="md:col-span-2 space-y-10" id="experience-list">
-                <!-- JS Injected -->
-            </div>
-        </div>
-    </section>
+ <section id="leadership" class="section-divider py-24 md:py-32 px-6 md:px-8 bg-brand-surface">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">03</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="leadership-title"></h3>
+ </div>
+ <div class="lg:col-span-9 space-y-14" id="leadership-list"></div>
+ </div>
+ </section>
 
-    <!-- Leadership Section -->
-    <section id="leadership" class="py-24 px-6 border-t border-brand-border bg-brand-surface">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="md:col-span-1">
-                <h3 class="text-2xl font-bold tracking-tight" id="leadership-title"></h3>
-            </div>
-            <div class="md:col-span-2 space-y-10" id="leadership-list">
-                <!-- JS Injected -->
-            </div>
-        </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 px-6 border-t border-brand-border">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="md:col-span-1">
-                <h3 class="text-2xl font-bold tracking-tight" id="skills-title"></h3>
-            </div>
-            <div class="md:col-span-2">
-                <ul class="space-y-4 text-brand-muted" id="skills-list">
-                    <!-- JS Injected -->
-                </ul>
-            </div>
-        </div>
-    </section>
+ <section id="projects" class="section-divider py-24 md:py-32 px-6 md:px-8">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">04</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="projects-title"></h3>
+ <p class="mt-5 text-brand-muted leading-relaxed">Show 3–4 strongest projects only. Treat this section as a doorway, not a full archive.</p>
+ </div>
+ <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-list"></div>
+ </div>
+ </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 border-t border-brand-border bg-brand-text text-white">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="md:col-span-1">
-                <h3 class="text-2xl font-bold tracking-tight" id="contact-title"></h3>
-            </div>
-            <div class="md:col-span-2">
-                <p class="text-lg text-gray-400 mb-8" id="contact-description"></p>
-                <div class="flex flex-col sm:flex-row gap-6 font-medium text-lg">
-                    <a id="contact-email" href="" class="hover:text-brand-accent transition-colors flex items-center gap-2">
-                        <span>Email</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                    <a id="contact-phone" href="" class="hover:text-brand-accent transition-colors flex items-center gap-2">
-                        <span>Phone</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+ <section id="skills" class="section-divider py-24 md:py-32 px-6 md:px-8 bg-brand-surface">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-brand-muted mb-4">05</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="skills-title"></h3>
+ </div>
+ <div class="lg:col-span-9">
+ <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5" id="skills-list"></ul>
+ </div>
+ </div>
+ </section>
 
-    <footer class="py-8 text-center text-sm text-brand-muted border-t border-brand-border">
-        <p>&copy; <span id="year"></span> HsinChun Chan. All rights reserved.</p>
-    </footer>
+ <section id="contact" class="section-divider py-24 md:py-32 px-6 md:px-8 bg-brand-text text-white">
+ <div class="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+ <div class="lg:col-span-3">
+ <div class="text-sm uppercase tracking-[0.22em] text-white/55 mb-4">06</div>
+ <h3 class="text-3xl md:text-4xl font-semibold tracking-tight" id="contact-title"></h3>
+ </div>
+ <div class="lg:col-span-9 max-w-3xl">
+ <p class="text-lg md:text-xl text-white/70 leading-relaxed mb-10" id="contact-description"></p>
+ <div class="flex flex-col md:flex-row gap-5 md:gap-8 text-lg font-medium">
+ <a id="contact-email" href="" class="inline-flex items-center gap-2 hover:text-white/75 transition-colors"></a>
+ <a id="contact-phone" href="" class="inline-flex items-center gap-2 hover:text-white/75 transition-colors"></a>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <script>
-        document.getElementById('year').innerText = new Date().getFullYear();
+ <footer class="py-8 px-6 md:px-8 text-sm text-brand-muted bg-brand-bg border-t border-brand-border">
+ <div class="max-w-content mx-auto flex items-center justify-between gap-4 flex-wrap">
+ <p>&copy; <span id="year"></span> HsinChun Chan. All rights reserved.</p>
+ <p>Built with clarity, structure, and room to grow.</p>
+ </div>
+ </footer>
 
-        let currentLang = 'en';
+ <script>
+ document.getElementById('year').innerText = new Date().getFullYear();
+ let currentLang = 'en';
 
-        function renderContent() {
-            const data = siteData[currentLang];
+ function renderEntry(item, isProject = false) {
+ const icon = item.companyIcon
+ ? `<div class="logo-shell"><img src="${item.companyIcon}" class="w-12 h-12 object-contain" alt="${item.company}"></div>`
+ : `<div class="logo-shell text-sm font-semibold text-brand-muted">${(item.company || item.name || '').slice(0,2).toUpperCase()}</div>`;
 
-            // Nav
-            document.getElementById('nav-about').innerText = data.nav.about;
-            document.getElementById('nav-experience').innerText = data.nav.experience;
-            document.getElementById('nav-leadership').innerText = data.nav.leadership;
-            document.getElementById('nav-contact').innerText = data.nav.contact;
-            document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
+ if (isProject) {
+ return `
+ <article class="border border-brand-border/80 rounded-[28px] p-7 md:p-8 bg-white/70 hover:bg-white transition-colors min-h-[260px]">
+ <div class="flex items-start justify-between gap-4 mb-6">
+ <div>
+ <h4 class="text-2xl font-semibold tracking-tight text-brand-text">${item.name}</h4>
+ <div class="text-sm text-brand-muted mt-2 font-medium">${item.period || ''}</div>
+ </div>
+ </div>
+ <p class="text-brand-muted leading-relaxed mb-5">${item.summary || ''}</p>
+ <ul class="space-y-2 text-sm text-brand-text">
+ ${(item.highlights || []).map(h => `<li class="flex gap-3"><span class="mt-[0.45rem] w-1.5 h-1.5 rounded-full bg-brand-text/60 flex-shrink-0"></span><span>${h}</span></li>`).join('')}
+ </ul>
+ </article>
+ `;
+ }
 
-            // Hero
-            document.getElementById('hero-name').innerText = data.hero.name;
-            document.getElementById('hero-title').innerText = data.hero.title;
-            document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
-            document.getElementById('hero-cta').innerText = data.hero.cta;
+ return `
+ <article class="entry relative pl-0 md:pl-0">
+ <div class="flex gap-5 md:gap-6 items-start relative">
+ <div class="relative">
+ ${icon}
+ <div class="entry-line hidden md:block"></div>
+ </div>
+ <div class="flex-1 pt-1">
+ <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+ <div>
+ <h4 class="text-2xl md:text-[1.75rem] leading-tight font-semibold tracking-tight text-brand-text">${item.role}</h4>
+ <div class="text-base font-medium text-brand-accent mt-2">${item.company}</div>
+ </div>
+ <div class="text-sm text-brand-muted font-medium md:text-right whitespace-nowrap">${item.period}</div>
+ </div>
+ ${item.summary ? `<p class="text-brand-text/90 leading-relaxed text-base md:text-[1.02rem] max-w-3xl mb-5">${item.summary}</p>` : ''}
+ ${(item.achievements && item.achievements.length) ? `
+ <ul class="space-y-3 mb-5 max-w-3xl">
+ ${item.achievements.map(a => `<li class="flex gap-3 text-brand-muted leading-relaxed"><span class="mt-[0.55rem] w-1.5 h-1.5 rounded-full bg-brand-text/60 flex-shrink-0"></span><span>${a}</span></li>`).join('')}
+ </ul>` : ''}
+ ${item.takeaway ? `<div class="inline-flex max-w-3xl text-sm md:text-[0.95rem] text-brand-text bg-black/[0.03] rounded-2xl px-4 py-3 border border-black/[0.06]"><span class="font-semibold mr-2">Takeaway:</span>${item.takeaway}</div>` : ''}
+ </div>
+ </div>
+ </article>
+ `;
+ }
 
-            // About
-            document.getElementById('about-title').innerText = data.about.title;
-            document.getElementById('about-description').innerText = data.about.description;
+ function renderContent() {
+ const data = siteData[currentLang];
+ document.documentElement.lang = currentLang;
 
-            // Experience
-            document.getElementById('experience-title').innerText = data.experience.title;
-            const expList = document.getElementById('experience-list');
-            expList.innerHTML = '';
-            data.experience.items.forEach(item => {
-                const achievements = item.achievements ? `<ul class="list-disc list-inside space-y-1 mt-3 text-brand-muted text-sm">${item.achievements.map(a => `<li>${a}</li>`).join('')}</ul>` : `<p class="text-brand-muted leading-relaxed text-sm">${item.description || ''}</p>`;
-                const icon = item.companyIcon ? `<img src="${item.companyIcon}" class="w-12 h-12 object-contain rounded-sm border border-brand-border mb-3 md:mb-0" alt="${item.company}">` : '';
-                
-                expList.innerHTML += `
-                    <div class="clean-card p-6 rounded-sm">
-                        <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
-                            ${icon}
-                            <div class="flex-1">
-                                <div class="flex flex-col md:flex-row md:justify-between">
-                                    <div>
-                                        <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
-                                        <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
-                                    </div>
-                                    <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
-                                </div>
-                            </div>
-                        </div>
-                        ${achievements}
-                    </div>
-                `;
-            });
+ document.getElementById('nav-about').innerText = data.nav.about;
+ document.getElementById('nav-experience').innerText = data.nav.experience;
+ document.getElementById('nav-leadership').innerText = data.nav.leadership;
+ document.getElementById('nav-projects').innerText = data.nav.projects || 'Projects';
+ document.getElementById('nav-contact').innerText = data.nav.contact;
+ document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
 
-            // Leadership
-            document.getElementById('leadership-title').innerText = data.leadership.title;
-            const leadList = document.getElementById('leadership-list');
-            leadList.innerHTML = '';
-            data.leadership.items.forEach(item => {
-                const achievements = item.achievements ? `<ul class="list-disc list-inside space-y-1 mt-3 text-brand-muted text-sm">${item.achievements.map(a => `<li>${a}</li>`).join('')}</ul>` : `<p class="text-brand-muted leading-relaxed text-sm">${item.description || ''}</p>`;
-                const icon = item.companyIcon ? `<img src="${item.companyIcon}" class="w-12 h-12 object-contain rounded-sm border border-brand-border mb-3 md:mb-0" alt="${item.company}">` : '';
+ document.getElementById('hero-name').innerText = data.hero.name;
+ document.getElementById('hero-title').innerText = data.hero.title;
+ document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+ document.getElementById('hero-cta').innerText = data.hero.cta;
 
-                leadList.innerHTML += `
-                    <div class="clean-card p-6 rounded-sm">
-                        <div class="flex flex-col md:flex-row md:items-start gap-4 mb-4">
-                            ${icon}
-                            <div class="flex-1">
-                                <div class="flex flex-col md:flex-row md:justify-between">
-                                    <div>
-                                        <h4 class="text-xl font-bold text-brand-text">${item.role}</h4>
-                                        <div class="text-sm font-medium text-brand-accent mt-1">${item.company}</div>
-                                    </div>
-                                    <div class="text-sm text-brand-muted mt-2 md:mt-0 font-medium">${item.period}</div>
-                                </div>
-                            </div>
-                        </div>
-                        ${achievements}
-                    </div>
-                `;
-            });
+ document.getElementById('about-title').innerText = data.about.title;
+ document.getElementById('about-description').innerText = data.about.description;
 
-            // Skills
-            document.getElementById('skills-title').innerText = data.skills.title;
-            const skillsList = document.getElementById('skills-list');
-            skillsList.innerHTML = '';
-            data.skills.items.forEach(item => {
-                skillsList.innerHTML += `
-                    <li class="flex items-start gap-3 border-b border-brand-border pb-3 last:border-0">
-                        <svg class="w-5 h-5 text-brand-text flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="text-brand-text font-medium text-sm leading-relaxed">${item}</span>
-                    </li>
-                `;
-            });
+ document.getElementById('experience-title').innerText = data.experience.title;
+ const expList = document.getElementById('experience-list');
+ expList.innerHTML = data.experience.items.map(item => renderEntry(item)).join('');
 
-            // Contact
-            document.getElementById('contact-title').innerText = data.contact.title;
-            document.getElementById('contact-description').innerText = data.contact.description;
-            document.getElementById('contact-email').href = "mailto:" + data.contact.email;
-            document.getElementById('contact-email').innerHTML = `<span>${data.contact.email}</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>`;
-            document.getElementById('contact-phone').href = "tel:" + data.contact.phone.replace(/[^0-9+]/g, '');
-            document.getElementById('contact-phone').innerHTML = `<span>${data.contact.phone}</span>`;
-            
-            document.documentElement.lang = currentLang;
-        }
+ document.getElementById('leadership-title').innerText = data.leadership.title;
+ const leadList = document.getElementById('leadership-list');
+ leadList.innerHTML = data.leadership.items.map(item => renderEntry(item)).join('');
 
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'zh' : 'en';
-            renderContent();
-        }
+ document.getElementById('projects-title').innerText = data.projects.title;
+ const projList = document.getElementById('projects-list');
+ projList.innerHTML = data.projects.items.map(item => renderEntry(item, true)).join('');
 
-        renderContent();
-    </script>
+ document.getElementById('skills-title').innerText = data.skills.title;
+ const skillsList = document.getElementById('skills-list');
+ skillsList.innerHTML = data.skills.items.map(item => `
+ <li class="border-b border-brand-border/80 pb-4 text-brand-text leading-relaxed text-[0.98rem]">
+ ${item}
+ </li>
+ `).join('');
+
+ document.getElementById('contact-title').innerText = data.contact.title;
+ document.getElementById('contact-description').innerText = data.contact.description;
+ document.getElementById('contact-email').href = 'mailto:' + data.contact.email;
+ document.getElementById('contact-email').innerHTML = `<span>${data.contact.email}</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>`;
+ document.getElementById('contact-phone').href = 'tel:' + data.contact.phone.replace(/[^0-9+]/g, '');
+ document.getElementById('contact-phone').innerHTML = `<span>${data.contact.phone}</span>`;
+ }
+
+ function toggleLanguage() {
+ currentLang = currentLang === 'en' ? 'zh' : 'en';
+ renderContent();
+ }
+
+ renderContent();
+ </script>
 </body>
 </html>
