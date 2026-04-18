@@ -105,6 +105,20 @@ const siteData = {
           ],
           takeaway: "Demonstrated the ability to translate raw user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.",
           fileLink: "./assets/CET_User_Research_Report.pdf"
+        },
+        {
+          name: "Event Operations & Brand Marketing",
+          period: "2024 – 2025 | NTU Breakdance Club",
+          summary: "Directed end-to-end event operations, brand visual design, and sponsorship marketing for a 200+ person event, achieving 100% sell-through with zero-waste inventory.",
+          tags: ["Brand Identity", "FMCG Sponsorship", "O2O Marketing", "Inventory Control"],
+          highlights: [
+            "Context: Faced with budget constraints and unpredictable demand for a large student event, requiring precise resource allocation, strong brand appeal, and external funding.",
+            "Brand Identity & Visual Execution: Independently established the event's brand image, directing the creative process from main visual (Key Visual) conceptualization to the final graphic design of all online/offline promotional materials.",
+            "Stakeholder & Sponsor Coordination: Pitched data-driven business proposals to secure sponsorships from major FMCG brands, including Red Bull, Monster Energy, Taiwan Beer, and Cadina.",
+            "O2O Promotion Tracking: Integrated QR codes and Bit.ly links into physical marketing materials to accurately measure offline-to-online traffic conversion rates.",
+            "Event Execution & Inventory Control: Engineered a demand forecasting model utilizing pre-order surveys with a 30% safety stock buffer, resulting in zero inventory waste."
+          ],
+          takeaway: "Proved my capability to manage complex operations, coordinate with external sponsors, and independently drive creative brand execution for real-world marketing campaigns."
         }
       ]
     },
@@ -230,6 +244,20 @@ const siteData = {
           ],
           takeaway: "展現了將抽象的使用者真實心聲（Voice of Customer），轉化為具體營運與行銷優化策略的產品洞察力。",
           fileLink: "./assets/CET_User_Research_Report.pdf"
+        },
+        {
+          name: "大型專案營運與品牌整合行銷",
+          period: "2024 – 2025 | 台大地板社",
+          summary: "統籌超過 200 人規模之大型專案營運、品牌視覺建立與贊助行銷，透過精準需求預測達成 100% 完售且零浪費的營運目標。",
+          tags: ["品牌視覺", "FMCG 贊助", "O2O 行銷", "庫存控管"],
+          highlights: [
+            "專案背景：面對大型專案的預算限制與不確定的周邊商品需求，需要精準的資源分配、強而有力的品牌視覺包裝，以及尋求外部商業贊助。",
+            "品牌建立與視覺統籌：獨立主導大型專案的品牌形象建立，包辦從前期的主視覺（Key Visual）發想，到後期的全通路實體與數位文宣製圖執行。",
+            "利害關係人與贊助協商：撰寫具備數據佐證的商業企劃書，成功與 Red Bull、Monster Energy、台灣啤酒、卡迪那 等國際知名品牌交涉並取得活動贊助。",
+            "O2O 行銷成效追蹤：於實體文宣品中全面導入 QR Code 與 Bit.ly 縮網址，精準追蹤並量化「線下至線上」的真實流量轉換率。",
+            "營運落地與庫存控管：運用活動前測問測數據建立需求預測模型，精準設定 30% 安全庫存，最終達成預算平衡與零庫存浪費。"
+          ],
+          takeaway: "證明了自己不僅擁有專案預算與 O2O 數據追蹤的理性思維，更具備從零到一獨立執行視覺設計與品牌包裝的創意落地能力。"
         }
       ]
     },
