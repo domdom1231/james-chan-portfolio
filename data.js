@@ -131,7 +131,8 @@ const siteData = {
             "Pain Point Analysis: Segmented the target audience into two groups: 'irregular eaters' requiring motivational support (e.g., quick pick-up, social engagement), and 'regular eaters' demanding quality upgrades (e.g., nutritional info, low-GI options to prevent food coma).",
             "Product Strategy Formulation: Translated these behavioral insights into specific product features, proposing a LINE-based chatbot WebApp to track daily habits and push personalized healthy diet recommendations."
           ],
-          takeaway: "Demonstrated the ability to conduct structured user research, apply statistical tools for audience segmentation, and translate raw data into clear, actionable product features."
+          takeaway: "Demonstrated the ability to conduct structured user research, apply statistical tools for audience segmentation, and translate raw data into clear, actionable product features.",
+          fileLink: "./assets/Breakfast_User_Research_Report.pdf"
         }
       ]
     },
@@ -283,7 +284,8 @@ const siteData = {
             "受眾分群 (Segmentation)：將痛點轉化為兩大客群需求。不規律者偏向「動機型需求」（需快速取餐、社交陪伴），規律者則偏重「品質型需求」（需多元選擇、避免食睏的低 GI 餐點）。",
             "產品策略落地：將前期研究洞察落地為 WebApp（LINE 聊天機器人）功能規格，設計出包含「每日早餐追蹤互動」與「社群健康資訊推播」的專案解方。"
           ],
-          takeaway: "展現了從零到一的產品前期調研能力，能運用統計工具進行精準受眾分群，並將數據佐證轉化為切中使用者痛點的商業與產品設計。"
+          takeaway: "展現了從零到一的產品前期調研能力，能運用統計工具進行精準受眾分群，並將數據佐證轉化為切中使用者痛點的商業與產品設計。",
+          fileLink: "./assets/Breakfast_User_Research_Report.pdf"
         }
       ]
     },
