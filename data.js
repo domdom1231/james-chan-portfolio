@@ -103,7 +103,8 @@ const siteData = {
             "Key Insights: Identified critical operational pain points, such as a mismatch in internship expectations and dissatisfaction with the mandatory housing cleaning service.",
             "Data-Backed Recommendations: Proposed implementing an 'opt-in/opt-out' cleaning SOP to improve user privacy, and advised establishing stricter expectation-alignment guidelines for host internship organizations."
           ],
-          takeaway: "Demonstrated the ability to translate raw user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution."
+          takeaway: "Demonstrated the ability to translate raw user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.",
+          fileLink: "./assets/CET_User_Research_Report.pdf"
         }
       ]
     },
@@ -227,7 +228,8 @@ const siteData = {
             "數據洞察：從繁雜的數據中抓出核心痛點，發現使用者對於「實習機構的期待落差」與「缺乏彈性的強制住宿清潔服務」有顯著的負面反饋。",
             "落地建議：向管理層提出具體優化方案，包含導入「清潔服務 Opt-in/out（自由選填）機制」以提升住宿隱私，以及建議針對實習機構建立更嚴謹的「期待對齊規範」。"
           ],
-          takeaway: "展現了將抽象的使用者真實心聲（Voice of Customer），轉化為具體營運與行銷優化策略的產品洞察力。"
+          takeaway: "展現了將抽象的使用者真實心聲（Voice of Customer），轉化為具體營運與行銷優化策略的產品洞察力。",
+          fileLink: "./assets/CET_User_Research_Report.pdf"
         }
       ]
     },
