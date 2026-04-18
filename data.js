@@ -119,6 +119,19 @@ const siteData = {
             "Event Execution & Inventory Control: Engineered a demand forecasting model utilizing pre-order surveys with a 30% safety stock buffer, resulting in zero inventory waste."
           ],
           takeaway: "Proved my capability to manage complex operations, coordinate with external sponsors, and independently drive creative brand execution for real-world marketing campaigns."
+        },
+        {
+          name: "User Needs Analysis & Product Design",
+          period: "School Project | Course: Project Design & Evaluation",
+          summary: "Conducted end-to-end user research on 62 students to identify behavioral blockers for breakfast consumption, translating data insights into the foundation for a health-driven WebApp.",
+          tags: ["User Research", "Statistical Analysis", "Audience Segmentation", "Product Strategy"],
+          highlights: [
+            "User Needs Assessment: Designed and analyzed a quantitative and qualitative survey (N=68) evaluating daily dietary habits. Discovered that nearly 70% of students eat breakfast irregularly, and 88% of regular eaters consider their choices unhealthy.",
+            "Data-Driven Segmentation: Applied statistical methods (Chi-Square, Mann-Whitney U tests) to uncover that late wake-up times and dormitory living strongly correlate with irregular habits.",
+            "Pain Point Analysis: Segmented the target audience into two groups: 'irregular eaters' requiring motivational support (e.g., quick pick-up, social engagement), and 'regular eaters' demanding quality upgrades (e.g., nutritional info, low-GI options to prevent food coma).",
+            "Product Strategy Formulation: Translated these behavioral insights into specific product features, proposing a LINE-based chatbot WebApp to track daily habits and push personalized healthy diet recommendations."
+          ],
+          takeaway: "Demonstrated the ability to conduct structured user research, apply statistical tools for audience segmentation, and translate raw data into clear, actionable product features."
         }
       ]
     },
@@ -258,6 +271,19 @@ const siteData = {
             "營運落地與庫存控管：運用活動前測問測數據建立需求預測模型，精準設定 30% 安全庫存，最終達成預算平衡與零庫存浪費。"
           ],
           takeaway: "證明了自己不僅擁有專案預算與 O2O 數據追蹤的理性思維，更具備從零到一獨立執行視覺設計與品牌包裝的創意落地能力。"
+        },
+        {
+          name: "使用者需求分析與產品設計",
+          period: "課堂專案｜專案設計與評估",
+          summary: "針對大學生「不常吃早餐」的問題進行 62 份問卷的量化與質化分析，進行精準受眾分群，並將數據洞察轉化為具備健康驅動力的 WebApp 產品企劃。",
+          tags: ["使用者研究", "統計分析", "受眾分群", "產品策略"],
+          highlights: [
+            "使用者需求評估：設計並回收 62 份問卷以調查大學生飲食習慣。數據指出高達 70% 的學生未養成規律吃早餐的習慣，且規律吃早餐者中亦有近 9 成自評飲食不健康。",
+            "數據洞察與統計分析：運用卡方檢定與 U 檢定進行交叉分析，精準抓出「住宿舍」與「晚起」為不規律吃早餐的顯著痛點與行為變數。",
+            "受眾分群 (Segmentation)：將痛點轉化為兩大客群需求。不規律者偏向「動機型需求」（需快速取餐、社交陪伴），規律者則偏重「品質型需求」（需多元選擇、避免食睏的低 GI 餐點）。",
+            "產品策略落地：將前期研究洞察落地為 WebApp（LINE 聊天機器人）功能規格，設計出包含「每日早餐追蹤互動」與「社群健康資訊推播」的專案解方。"
+          ],
+          takeaway: "展現了從零到一的產品前期調研能力，能運用統計工具進行精準受眾分群，並將數據佐證轉化為切中使用者痛點的商業與產品設計。"
         }
       ]
     },
