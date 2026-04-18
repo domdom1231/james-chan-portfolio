@@ -93,14 +93,17 @@ const siteData = {
       title: "Latest Project",
       items: [
         {
-          name: "Coming Soon",
-          period: "To be updated",
-          summary: "A featured project section will be added here soon.",
+          name: "Audience Insight & Program Optimization",
+          period: "Aug 2025 – Dec 2025 | CET Academic Programs",
+          summary: "Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.",
+          tags: ["User Research", "Data Synthesis", "Operational Strategy", "Problem Solving"],
           highlights: [
-            "Project overview coming soon",
-            "Problem statement coming soon",
-            "My role and outcomes coming soon"
-          ]
+            "Context: The organization needed to evaluate the satisfaction and operational effectiveness of its study abroad program to optimize future marketing and operational strategies.",
+            "My Role: Synthesized quantitative ratings and qualitative open-ended responses from 68 participants, covering academics, housing, and internships.",
+            "Key Insights: Identified critical operational pain points, such as a mismatch in internship expectations and dissatisfaction with the mandatory housing cleaning service.",
+            "Data-Backed Recommendations: Proposed implementing an 'opt-in/opt-out' cleaning SOP to improve user privacy, and advised establishing stricter expectation-alignment guidelines for host internship organizations."
+          ],
+          takeaway: "Demonstrated the ability to translate raw user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution."
         }
       ]
     },
@@ -214,14 +217,17 @@ const siteData = {
       title: "最新專案",
       items: [
         {
-          name: "Coming Soon",
-          period: "待更新",
-          summary: "這裡之後會放上目前正在整理中的代表性專案。",
+          name: "受眾洞察與營運服務優化",
+          period: "2025.08 – 2025.12 | CET Academic Programs",
+          summary: "分析 68 份期末使用者評鑑數據，精準抓出服務痛點，並提出以數據為基礎的營運優化建議。",
+          tags: ["使用者研究", "數據彙整", "營運策略", "問題解決"],
           highlights: [
-            "專案背景整理中",
-            "問題定義整理中",
-            "角色與成果整理中"
-          ]
+            "專案背景：機構需要評估留學計畫的整體滿意度與營運成效，以作為未來行銷推廣與服務升級的依據。",
+            "我的角色：彙整並分析 68 位參與者的量化評分與質化開放性回饋，範圍涵蓋學術課程、住宿體驗與實習安排。",
+            "數據洞察：從繁雜的數據中抓出核心痛點，發現使用者對於「實習機構的期待落差」與「缺乏彈性的強制住宿清潔服務」有顯著的負面反饋。",
+            "落地建議：向管理層提出具體優化方案，包含導入「清潔服務 Opt-in/out（自由選填）機制」以提升住宿隱私，以及建議針對實習機構建立更嚴謹的「期待對齊規範」。"
+          ],
+          takeaway: "展現了將抽象的使用者真實心聲（Voice of Customer），轉化為具體營運與行銷優化策略的產品洞察力。"
         }
       ]
     },

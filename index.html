@@ -36,7 +36,6 @@
         }
         .logo-box img[src*="5b61b7104037"] { background-color: #000; width: 100%; height: 100%; object-fit: contain; margin: -6px; padding: 10px; }
         
-        /* Modal Styles */
         .modal {
             display: none; position: fixed; inset: 0; z-index: 100;
             background: rgba(0,0,0,0.4); backdrop-blur: 4px;
@@ -53,7 +52,6 @@
 <body class="antialiased font-sans">
     <script src="./data.js"></script>
 
-    <!-- Modal -->
     <div id="detail-modal" class="modal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-black text-2xl">&times;</button>
@@ -61,7 +59,6 @@
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-border">
         <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#" class="text-lg font-bold tracking-tight">James Chan</a>
@@ -70,6 +67,7 @@
                     <a href="#about" class="text-brand-muted hover:text-black" id="nav-about"></a>
                     <a href="#experience" class="text-brand-muted hover:text-black" id="nav-experience"></a>
                     <a href="#leadership" class="text-brand-muted hover:text-black" id="nav-leadership"></a>
+                    <a href="#projects" class="text-brand-muted hover:text-black" id="nav-projects"></a>
                 </div>
                 <button id="lang-toggle" onclick="toggleLanguage()" class="border border-brand-border px-3 py-1 rounded-full text-[10px] font-bold tracking-widest"></button>
             </div>
@@ -77,14 +75,12 @@
     </nav>
 
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-24">
-        <!-- Hero -->
         <section class="py-10">
             <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6" id="hero-name"></h1>
             <h2 class="text-xl md:text-2xl text-brand-muted mb-8" id="hero-title"></h2>
             <p class="max-w-2xl text-lg text-brand-muted" id="hero-subtitle"></p>
         </section>
 
-        <!-- About -->
         <section id="about" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
             <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="about-title"></div>
             <div class="md:col-span-3">
@@ -92,19 +88,21 @@
             </div>
         </section>
 
-        <!-- Experience -->
         <section id="experience" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
             <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="experience-title"></div>
             <div class="md:col-span-3 space-y-12" id="experience-list"></div>
         </section>
 
-        <!-- Leadership -->
         <section id="leadership" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
             <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="leadership-title"></div>
             <div class="md:col-span-3 space-y-12" id="leadership-list"></div>
         </section>
 
-        <!-- Contact -->
+        <section id="projects" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="projects-title"></div>
+            <div class="md:col-span-3 space-y-12" id="projects-list"></div>
+        </section>
+
         <section id="contact" class="pt-10 border-t border-brand-border">
             <h3 class="text-3xl font-bold mb-6" id="contact-title"></h3>
             <p class="text-lg text-brand-muted mb-8" id="contact-description"></p>
@@ -134,26 +132,36 @@
                 </div>
             ` : '';
 
-            body.innerHTML = `
+            const isProject = type === 'projects';
+            const headerHtml = isProject ? `
+                <div class="mb-6">
+                    <h4 class="text-3xl font-bold mb-2">${data.name}</h4>
+                    <div class="text-brand-muted font-medium text-sm">${data.period}</div>
+                </div>
+            ` : `
                 <div class="flex items-center gap-4 mb-6">
                     <div class="logo-box"><img src="${data.companyIcon}" class="w-full h-full object-contain"></div>
                     <div>
                         <h4 class="text-2xl font-bold">${data.role}</h4>
-                        <div class="text-brand-muted">${data.company}</div>
+                        <div class="text-brand-muted text-sm">${data.company}</div>
                     </div>
                 </div>
+            `;
+
+            body.innerHTML = `
+                ${headerHtml}
                 ${tagsHtml}
                 <div class="space-y-6">
                     <div>
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Key Achievements</div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">${isProject ? 'Project Highlights' : 'Key Achievements'}</div>
                         <ul class="space-y-3">
-                            ${(data.achievements || []).map(a => `<li class="flex gap-3 text-sm text-brand-muted"><span class="w-1 h-1 rounded-full bg-black mt-2 flex-shrink-0"></span><span>${a}</span></li>`).join('')}
+                            ${(data.highlights || data.achievements || []).map(a => `<li class="flex gap-3 text-sm text-brand-muted"><span class="w-1 h-1 rounded-full bg-black mt-2 flex-shrink-0"></span><span>${a}</span></li>`).join('')}
                         </ul>
                     </div>
                     ${data.takeaway ? `
                         <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
                             <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">Key Takeaway</div>
-                            <p class="text-sm font-medium italic">${data.takeaway}</p>
+                            <p class="text-sm font-medium italic leading-relaxed text-brand-text">${data.takeaway}</p>
                         </div>
                     ` : ''}
                 </div>
@@ -174,17 +182,20 @@
                 </div>
             ` : '';
 
+            const isProject = type === 'projects';
+            const iconHtml = !isProject ? `<div class="logo-box"><img src="${item.companyIcon}" class="w-full h-full object-contain"></div>` : '';
+
             return `
                 <div class="flex flex-col md:flex-row gap-6">
-                    <div class="logo-box"><img src="${item.companyIcon}" class="w-full h-full object-contain"></div>
+                    ${iconHtml}
                     <div class="flex-1">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="text-xl font-bold">${item.role}</h4>
+                            <h4 class="text-xl font-bold">${item.role || item.name}</h4>
                             <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">${item.period}</span>
                         </div>
-                        <div class="text-brand-muted font-medium mb-3">${item.company}</div>
+                        ${!isProject ? `<div class="text-brand-muted font-medium mb-3">${item.company}</div>` : ''}
                         ${tagsHtml}
-                        <p class="text-sm text-brand-muted leading-relaxed mb-4 line-clamp-3">${item.summary}</p>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-4">${item.summary}</p>
                         <button onclick="showDetail('${type}', ${index})" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
                     </div>
                 </div>
@@ -197,6 +208,7 @@
             document.getElementById('nav-about').innerText = data.nav.about;
             document.getElementById('nav-experience').innerText = data.nav.experience;
             document.getElementById('nav-leadership').innerText = data.nav.leadership;
+            document.getElementById('nav-projects').innerText = data.nav.projects;
             document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
             document.getElementById('hero-name').innerText = data.hero.name;
             document.getElementById('hero-title').innerText = data.hero.title;
@@ -207,6 +219,8 @@
             document.getElementById('experience-list').innerHTML = data.experience.items.map((i, idx) => renderEntry(i, idx, 'experience')).join('');
             document.getElementById('leadership-title').innerText = data.leadership.title;
             document.getElementById('leadership-list').innerHTML = data.leadership.items.map((i, idx) => renderEntry(i, idx, 'leadership')).join('');
+            document.getElementById('projects-title').innerText = data.projects.title;
+            document.getElementById('projects-list').innerHTML = data.projects.items.map((i, idx) => renderEntry(i, idx, 'projects')).join('');
             document.getElementById('contact-title').innerText = data.contact.title;
             document.getElementById('contact-description').innerText = data.contact.description;
             document.getElementById('contact-email').href = 'mailto:' + data.contact.email;
