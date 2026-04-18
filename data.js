@@ -26,6 +26,7 @@ const siteData = {
           company: "CET Academic Programs",
           companyIcon: "https://i.ibb.co/yc5K2RVx/30c014d2b932.png",
           period: "Aug 2025 – Dec 2025",
+          tags: ["Social Media Marketing", "Content Production", "Google Analytics", "Bilingual Communication"],
           summary: "Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.",
           achievements: [
             "Produced social media content in multiple formats, including short-form videos and visual posts, using Premiere Pro, Photoshop, and Canva.",
@@ -40,6 +41,7 @@ const siteData = {
           company: "National Center for Theoretical Sciences (NCTS) Mathematics",
           companyIcon: "https://i.ibb.co/jPjHDqVM/e93c443760b7.png",
           period: "Feb 2026 – Present",
+          tags: ["Project Coordination", "Administrative Operations", "Bilingual Coordination", "Event Management"],
           summary: "Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.",
           achievements: [
             "Supported the coordination and execution of national-level seminars and academic events.",
@@ -59,6 +61,7 @@ const siteData = {
           company: "NTU College of Social Sciences Student Association",
           companyIcon: "https://i.ibb.co/NgcyVfDH/538f4769e018.png",
           period: "2025 – Present",
+          tags: ["Strategy Realignment", "Stakeholder Negotiation", "Risk Management", "Public Infrastructure"],
           summary: "Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.",
           achievements: [
             "Redirected team strategy away from highly sensitive and politically contentious issues, focusing resources and budget on student welfare initiatives with higher feasibility and broader support.",
@@ -74,6 +77,7 @@ const siteData = {
           company: "NTU Breakdance Club",
           companyIcon: "https://i.ibb.co/fYYF6TpV/5b61b7104037.png",
           period: "2024 – 2025",
+          tags: ["Sponsorship outreach", "O2O Marketing", "Demand Estimation", "Event Promotion"],
           summary: "Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.",
           achievements: [
             "Integrated QR codes and Bitly links into physical promotional materials to track offline-to-online traffic and evaluate conversion performance.",
@@ -143,6 +147,7 @@ const siteData = {
           company: "CET Academic Programs",
           companyIcon: "https://i.ibb.co/yc5K2RVx/30c014d2b932.png",
           period: "2025.08 – 2025.12",
+          tags: ["社群行銷", "內容產製", "數據追蹤", "雙語溝通"],
           summary: "於國際教育機構支援行銷與內容營運，工作涵蓋社群內容製作、行銷協作、數據追蹤與雙語溝通。",
           achievements: [
             "使用 Premiere Pro、Photoshop、Canva 製作短影音與圖文內容，支援社群媒體經營。",
@@ -157,6 +162,7 @@ const siteData = {
           company: "National Center for Theoretical Sciences (NCTS) Mathematics",
           companyIcon: "https://i.ibb.co/jPjHDqVM/e93c443760b7.png",
           period: "2026.02 – 至今",
+          tags: ["行政執行", "專案協作", "雙語溝通", "活動管理"],
           summary: "支援學術活動與專案行政執行，在需與國內外學者協作的快節奏環境中處理專案與營運細節。",
           achievements: [
             "支援國家級研討會與學術活動之規劃與執行。",
@@ -176,6 +182,7 @@ const siteData = {
           company: "國立臺灣大學社科院學生會",
           companyIcon: "https://i.ibb.co/NgcyVfDH/538f4769e018.png",
           period: "2025 – 至今",
+          tags: ["策略轉型", "利害關係人協調", "風險管理", "公共設施優化"],
           summary: "主導學生福利與校園改善專案，將團隊資源聚焦於具體需求，並與校方進行溝通協調，推動可落地的改善方案。",
           achievements: [
             "帶領團隊重新檢視營運方向，避開高度敏感且具公關風險的議題，將預算與資源集中於學生福利相關專案，提升執行成功率與支持度。",
@@ -191,6 +198,7 @@ const siteData = {
           company: "國立臺灣大學地板街舞社",
           companyIcon: "https://i.ibb.co/fYYF6TpV/5b61b7104037.png",
           period: "2024 – 2025",
+          tags: ["品牌贊助", "O2O 行銷", "需求估算", "活動宣傳"],
           summary: "負責活動對外溝通、贊助接洽與宣傳規劃，聚焦於受眾觸及、轉換追蹤與資源整合。",
           achievements: [
             "於實體宣傳品中導入 QR code 與 Bitly 連結，追蹤線下到線上的流量轉換表現。",

@@ -128,14 +128,21 @@
             const modal = document.getElementById('detail-modal');
             const body = document.getElementById('modal-body');
             
+            const tagsHtml = data.tags ? `
+                <div class="flex flex-wrap gap-2 mb-6">
+                    ${data.tags.map(t => `<span class="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">${t}</span>`).join('')}
+                </div>
+            ` : '';
+
             body.innerHTML = `
-                <div class="flex items-center gap-4 mb-8">
+                <div class="flex items-center gap-4 mb-6">
                     <div class="logo-box"><img src="${data.companyIcon}" class="w-full h-full object-contain"></div>
                     <div>
                         <h4 class="text-2xl font-bold">${data.role}</h4>
                         <div class="text-brand-muted">${data.company}</div>
                     </div>
                 </div>
+                ${tagsHtml}
                 <div class="space-y-6">
                     <div>
                         <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Key Achievements</div>
@@ -161,6 +168,12 @@
         }
 
         function renderEntry(item, index, type) {
+            const tagsHtml = item.tags ? `
+                <div class="flex flex-wrap gap-2 mb-4">
+                    ${item.tags.map(t => `<span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">${t}</span>`).join('')}
+                </div>
+            ` : '';
+
             return `
                 <div class="flex flex-col md:flex-row gap-6">
                     <div class="logo-box"><img src="${item.companyIcon}" class="w-full h-full object-contain"></div>
@@ -170,6 +183,7 @@
                             <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">${item.period}</span>
                         </div>
                         <div class="text-brand-muted font-medium mb-3">${item.company}</div>
+                        ${tagsHtml}
                         <p class="text-sm text-brand-muted leading-relaxed mb-4 line-clamp-3">${item.summary}</p>
                         <button onclick="showDetail('${type}', ${index})" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
                     </div>
