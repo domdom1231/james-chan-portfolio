@@ -11,7 +11,7 @@ const siteData = {
     hero: {
       name: "HsinChun Chan (James)",
       title: "Marketing, Communications & Product Strategy",
-      subtitle: "Bridging quantitative logic from Economics with qualitative insight from Social Work. Experienced in content marketing, campaign coordination, data tracking, and audience-focused execution.",
+      subtitle: "Combining training in Economics and Social Work with hands-on experience in content marketing, campaign coordination, and audience-focused execution.",
       cta: "Explore Experience"
     },
     about: {
@@ -103,7 +103,7 @@ const siteData = {
             "**Key Insights**: Identified critical operational pain points, such as a mismatch in internship expectations and housing cleaning privacy issues.",
             "**Data-Backed Recommendations**: Proposed an 'opt-in/opt-out' cleaning SOP and stricter expectation-alignment guidelines for internships."
           ],
-          takeaway: "Demonstrated the ability to translate raw user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.",
+          takeaway: "This project allowed me to translate user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.",
           fileLink: "./assets/CET_User_Research_Report.pdf"
         },
         {
@@ -112,13 +112,13 @@ const siteData = {
           summary: "Directed end-to-end event operations, brand visual design, and sponsorship marketing for a 200+ person event, achieving 100% sell-through with zero-waste inventory.",
           tags: ["Brand Identity", "FMCG Sponsorship", "O2O Marketing", "Inventory Control"],
           highlights: [
-            "**Context**: Faced with budget constraints and unpredictable demand, requiring precise resource allocation and external funding.",
+            "**Context**: Faced with budget constraints and unpredictable demand, requiring effective resource allocation and external funding.",
             "**Brand Identity & Visual Execution**: Independently established the event's brand image, directing the creative process from Key Visual發想 to final graphic design.",
             "**Stakeholder & Sponsor Coordination**: Pitched data-driven business proposals to secure sponsorships from brands like Red Bull, Monster Energy, and Taiwan Beer.",
-            "**O2O Promotion Tracking**: Integrated QR codes and Bitly links to accurately measure offline-to-online traffic conversion rates.",
+            "**O2O Promotion Tracking**: Integrated QR codes and Bitly links to measure offline-to-online traffic conversion rates.",
             "**Event Execution & Inventory Control**: Engineered a demand forecasting model utilizing pre-order surveys, resulting in zero inventory waste."
           ],
-          takeaway: "Proved my capability to manage complex operations, coordinate with external sponsors, and independently drive creative brand execution for real-world marketing campaigns."
+          takeaway: "Through this event, I managed complex operations, coordinated with external sponsors, and independently drove creative brand execution from start to finish."
         },
         {
           name: "User Needs Analysis & Product Design",
@@ -131,21 +131,21 @@ const siteData = {
             "**Pain Point Analysis**: Segmented audience into 'irregular eaters' (motivational needs) and 'regular eaters' (quality needs like low-GI).",
             "**Product Strategy Formulation**: Translated insights into a LINE-based chatbot WebApp to track daily habits and push personalized recommendations."
           ],
-          takeaway: "Demonstrated the ability to conduct structured user research, apply statistical tools for audience segmentation, and translate raw data into clear, actionable product features.",
+          takeaway: "This research allowed me to apply statistical tools for audience segmentation and translate raw survey data into clear, actionable product features.",
           fileLink: "./assets/Breakfast_User_Research_Report.pdf"
         },
         {
           name: "Full-Stack WebApp & AI Bot Development",
           period: "School Project | Course: Project Design & Evaluation",
-          summary: "Acted as the sole product owner and developer, leveraging Agentic AI to architect and build 'Breakfast Club'—a dual-interface habit-tracking platform.",
-          tags: ["Agentic AI", "Full-Stack Dev", "System Architecture", "AI Vision"],
+          summary: "Led the product planning and technical development of 'Breakfast Club,' using AI tools to accelerate the build of a LINE bot and React web app.",
+          tags: ["Product Planning", "Full-Stack Dev", "System Architecture", "AI Integration"],
           highlights: [
-            "**AI-Assisted Full-Stack Development**: Directed an Agentic AI workflow to independently build architecture including React frontend, Flask backend, and Supabase.",
-            "**System Architecture & Security**: Migrated high-risk database writes to Flask backend and implemented Row Level Security (RLS) for data privacy.",
+            "**AI-Assisted Full-Stack Development**: Directed an AI workflow to independently build architecture including React frontend, Flask backend, and Supabase.",
+            "**System Architecture & Security**: Migrated database writes to Flask backend and implemented Row Level Security (RLS) for data privacy.",
             "**AI Vision Integration**: Integrated Gemini 2.5 Flash Lite API to perform real-time image recognition and output structured JSON data.",
             "**UX & Product Strategy**: Applied the 'Audience Effect' to boost retention and engineered an 'Optimistic UI' mechanism for social interactions.",
           ],
-          takeaway: "Demonstrated the ability to orchestrate Agentic AI for rapid product development, bridging the gap between high-level product strategy, complex system architecture, and technical execution.",
+          takeaway: "This project strengthened my ability to turn a product concept into a working system, while coordinating product logic, technical structure, and implementation details.",
           fileLink: "./assets/Breakfast_Club_Technical_Case_Study.pdf"
         }
       ]
@@ -178,7 +178,7 @@ const siteData = {
     hero: {
       name: "詹新群 (James)",
       title: "行銷、企業溝通與產品策略",
-      subtitle: "結合經濟系的量化分析訓練與社工系的受眾洞察能力，具備內容行銷、專案協作、數據追蹤與以使用者為導向的執行經驗。",
+      subtitle: "結合經濟系與社工系的跨領域訓練，具備內容行銷、專案協作、數據追蹤與以受眾為導向的實務經驗。",
       cta: "查看經歷"
     },
     about: {
@@ -262,57 +262,57 @@ const siteData = {
         {
           name: "受眾洞察與營運服務優化",
           period: "2025.08 – 2025.12 | CET Academic Programs",
-          summary: "分析 68 份期末使用者評鑑數據，精準抓出服務痛點，並提出以數據為基礎的營運優化建議。",
+          summary: "分析 68 份期末使用者評鑑數據，找出服務痛點，並提出以數據為基礎的營運優化建議。",
           tags: ["使用者研究", "數據彙整", "營運策略", "問題解決"],
           highlights: [
             "**專案背景**：機構需要評估計畫滿意度與營運成效，作為未來行銷與服務升級的依據。",
             "**我的角色**：彙整分析 68 位參與者的量化評分與質化回饋，涵蓋學術、住宿與實習。",
-            "**數據洞察**：抓出核心痛點，發現使用者對於實習期待落差與住宿清潔隱私有顯著負評。",
+            "**數據洞察**：找出核心痛點，發現使用者對於實習期待落差與住宿清潔隱私有顯著負評。",
             "**落地建議**：提出導入「清潔服務 Opt-in/out 機制」以及更嚴謹的「實習期待對齊規範」。"
           ],
-          takeaway: "展現了將抽象的使用者真實心聲（Voice of Customer），轉化為具體營運與行銷優化策略的產品洞察力。",
+          takeaway: "這個專案讓我更熟悉如何從使用者回饋中整理關鍵問題，並將洞察轉化為具體可執行的營運優化建議。",
           fileLink: "./assets/CET_User_Research_Report.pdf"
         },
         {
           name: "大型專案營運與品牌整合行銷",
           period: "2024 – 2025 | 台大地板社",
-          summary: "統籌超過 200 人規模之大型專案營運、品牌視覺建立與贊助行銷，透過精準需求預測達成 100% 完售且零浪費的營運目標。",
+          summary: "統籌超過 200 人規模之大型專案營運、品牌視覺建立與贊助行銷，透過需求預測達成 100% 完售且零浪費的營運目標。",
           tags: ["品牌視覺", "FMCG 贊助", "O2O 行銷", "庫存控管"],
           highlights: [
             "**專案背景**：面對預算限制與不確定的商品需求，需要精準資源分配與外部商業贊助。",
             "**品牌建立與視覺統籌**：獨立主導品牌形象建立，包辦從主視覺發想至後期全通路文宣製圖。",
             "**利害關係人與贊助協商**：撰寫具數據佐證的企劃書，成功爭取 Red Bull、Monster 等品牌贊助。",
-            "**O2O 行銷成效追蹤**：全面導入 QR Code 與 Bit.ly，精準追蹤並量化「線下至線上」轉換率。",
-            "**營運落地與庫存控管**：運用問卷數據建立需求預測模型，精準設定 30% 安全庫存達成零浪費。"
+            "**O2O 行銷成效追蹤**：全面導入 QR Code 與 Bit.ly，追蹤並量化「線下至線上」轉換率。",
+            "**營運落地與庫存控管**：運用問卷數據建立需求預測模型，設定 30% 安全庫存達成零浪費。"
           ],
-          takeaway: "證明了自己不僅擁有專案預算與 O2O 數據追蹤的理性思維，更具備從零到一獨立執行視覺設計與品牌包裝的創意落地能力。"
+          takeaway: "透過這個專案，我實際將預算控管與 O2O 數據追蹤應用於活動宣傳，並從零到一獨立執行了視覺設計與品牌包裝。"
         },
         {
           name: "使用者需求分析與產品設計",
           period: "課堂專案｜專案設計與評估",
-          summary: "針對大學生「不常吃早餐」的問題進行 62 份問卷的量化與質化分析，進行精準受眾分群，並將數據洞察轉化為具備健康驅動力的 WebApp 產品企劃。",
+          summary: "針對大學生「不常吃早餐」的問題進行 62 份問卷的量化與質化分析，進行受眾分群，並將數據洞察轉化為具備健康驅動力的 WebApp 產品企劃。",
           tags: ["使用者研究", "統計分析", "受眾分群", "產品策略"],
           highlights: [
             "**使用者需求評估**：設計並回收 62 份問卷。發現高達 70% 學生未養成規律吃早餐習慣。",
-            "**數據洞察與統計分析**：運用卡方檢定與 U 檢定，抓出「住宿舍」與「晚起」為顯著行為變數。",
+            "**數據洞察與統計分析**：運用卡方檢定與 U 檢定，分析出「住宿舍」與「晚起」為顯著行為變數。",
             "**受眾分群 (Segmentation)**：將需求分為不規律者的「動機型」與規律者的「品質型」。",
-            "**產品策略落地**：將研究洞察轉化為 WebApp 功能規格，設計每日早餐追蹤與社群健康資訊推播。"
+            "**產品策略落地**：將研究洞察轉化為 WebApp 功能規格，設計每日追蹤與社群健康資訊推播。"
           ],
-          takeaway: "展現了從零到一的產品前期調研能力，能運用統計工具進行精準受眾分群，並將數據佐證轉化為切中使用者痛點的商業與產品設計。",
+          takeaway: "這個專案讓我實際應用統計工具進行受眾分群，並將數據洞察轉化為切中使用者痛點的產品設計。",
           fileLink: "./assets/Breakfast_User_Research_Report.pdf"
         },
         {
           name: "全端 WebApp 開發與 AI 整合應用",
           period: "課堂專案｜專案設計與評估",
-          summary: "擔任專案負責人與獨立開發者，運用 Agentic AI 協作開發「Breakfast Club」— 一款結合 LINE 聊天機器人與 React WebApp 的雙軌架構習慣養成平台。",
-          tags: ["Agentic AI", "全端開發", "系統架構", "AI 視覺"],
+          summary: "主導「Breakfast Club」的產品規劃與技術開發，運用 AI 工具加速構建結合 LINE 聊天機器人與 React WebApp 的習慣養成平台。",
+          tags: ["產品規劃", "全端開發", "系統架構", "AI 整合"],
           highlights: [
             "**AI 協作全端開發 (Agentic AI)**：扮演架構師指揮 AI 完成 React 前端、Flask 後端與 Supabase 資料庫建置。",
             "**系統架構與資安升級**：主導系統轉型為後端 API 寫入，並導入 RLS 權限控管機制提升安全性。",
             "**AI 視覺辨識整合**：串接 Gemini 2.5 Flash Lite 模型，實現即時早餐圖片辨識與熱量 JSON 資料轉換。",
             "**UX 體驗與產品營運**：應用「觀眾效應」心理學並導入「樂觀 UI」機制，實現無延遲的使用者互動。"
           ],
-          takeaway: "證明了自己具備強大的 AI 協作與提示工程（Prompt Engineering）能力，能將商業需求無縫轉化為系統架構，並具備撰寫跨部門技術交接文件的成熟 PM 思維。",
+          takeaway: "這個專案強化了我將產品概念落地為實際系統的能力，並在過程中學習如何協調產品邏輯、系統架構與技術實作細節。",
           fileLink: "./assets/Breakfast_Club_Technical_Case_Study.pdf"
         }
       ]
