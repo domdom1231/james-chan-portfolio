@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>James Chan | Portfolio</title>
+    <title>HsinChun Chan (James) | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,6 @@
     <style>
         html { scroll-behavior: smooth; }
         body { background: #ffffff; color: #111111; line-height: 1.5; }
-        
-        /* Typography Polish */
         b, strong { font-weight: 700; color: #000; }
         
         .logo-box {
@@ -54,8 +52,6 @@
     </style>
 </head>
 <body class="antialiased font-sans">
-    <script src="./data.js"></script>
-
     <div id="detail-modal" class="modal" onclick="closeModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-black text-2xl">&times;</button>
@@ -68,58 +64,230 @@
             <a href="#" class="text-lg font-bold tracking-tight">James Chan</a>
             <div class="flex items-center gap-6 text-sm font-medium">
                 <div class="hidden md:flex gap-6">
-                    <a href="#about" class="text-brand-muted hover:text-black" id="nav-about"></a>
-                    <a href="#experience" class="text-brand-muted hover:text-black" id="nav-experience"></a>
-                    <a href="#leadership" class="text-brand-muted hover:text-black" id="nav-leadership"></a>
-                    <a href="#projects" class="text-brand-muted hover:text-black" id="nav-projects"></a>
+                    <a href="#about" class="text-brand-muted hover:text-black">About</a>
+                    <a href="#experience" class="text-brand-muted hover:text-black">Experience</a>
+                    <a href="#leadership" class="text-brand-muted hover:text-black">Leadership</a>
+                    <a href="#projects" class="text-brand-muted hover:text-black">Latest Project</a>
                 </div>
-                <button id="lang-toggle" onclick="toggleLanguage()" class="border border-brand-border px-3 py-1 rounded-full text-[10px] font-bold tracking-widest"></button>
+                <a href="zh.html" class="border border-brand-border px-3 py-1 rounded-full text-[10px] font-bold tracking-widest hover:bg-gray-50 transition-colors inline-block">中</a>
             </div>
         </div>
     </nav>
 
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-24">
         <section class="py-10">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6" id="hero-name"></h1>
-            <h2 class="text-xl md:text-2xl text-brand-muted mb-8" id="hero-title"></h2>
-            <p class="max-w-2xl text-lg text-brand-muted" id="hero-subtitle"></p>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">HsinChun Chan (James)</h1>
+            <h2 class="text-xl md:text-2xl text-brand-muted mb-8">Marketing, Communications & Product Strategy</h2>
+            <p class="max-w-2xl text-lg text-brand-muted">Combining training in Economics and Social Work with hands-on experience in content marketing, campaign coordination, and audience-focused execution.</p>
         </section>
 
         <section id="about" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="about-title"></div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">About</div>
             <div class="md:col-span-3">
-                <p class="text-lg text-brand-text leading-relaxed" id="about-description"></p>
+                <p class="text-lg text-brand-text leading-relaxed">I am interested in roles across marketing, corporate communications, and product-related strategy. With training in both Economics and Social Work, I bring a combination of data awareness and audience understanding. My experience includes content production, campaign support, performance tracking, and cross-functional coordination. I value clear communication, thoughtful execution, and using insights to turn ideas into work that creates practical value.</p>
             </div>
         </section>
 
         <section id="experience" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="experience-title"></div>
-            <div class="md:col-span-3 space-y-12" id="experience-list"></div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Experience</div>
+            <div class="md:col-span-3 space-y-12">
+                
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="logo-box"><img src="https://i.ibb.co/yc5K2RVx/30c014d2b932.png" class="w-full h-full object-contain"></div>
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold">Marketing and Content Intern</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Aug 2025 – Dec 2025</span>
+                    </div>
+                    <div class="text-brand-muted font-medium mb-3">CET Academic Programs</div>
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Social Media Marketing</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Content Production</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Google Analytics</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Bilingual Communication</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.</p>
+                    <button onclick="showDetail('experience', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="logo-box"><img src="https://i.ibb.co/jPjHDqVM/e93c443760b7.png" class="w-full h-full object-contain"></div>
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold">Project Assistant</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Feb 2026 – Present</span>
+                    </div>
+                    <div class="text-brand-muted font-medium mb-3">National Center for Theoretical Sciences (NCTS) Mathematics</div>
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Project Coordination</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Administrative Operations</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Bilingual Coordination</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Event Management</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.</p>
+                    <button onclick="showDetail('experience', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            </div>
         </section>
 
         <section id="leadership" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="leadership-title"></div>
-            <div class="md:col-span-3 space-y-12" id="leadership-list"></div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Leadership & Activities</div>
+            <div class="md:col-span-3 space-y-12">
+                
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="logo-box"><img src="https://i.ibb.co/NgcyVfDH/538f4769e018.png" class="w-full h-full object-contain"></div>
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold">Vice President</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2025 – Present</span>
+                    </div>
+                    <div class="text-brand-muted font-medium mb-3">NTU College of Social Sciences Student Association</div>
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Strategy Realignment</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Stakeholder Negotiation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Risk Management</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Public Infrastructure</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.</p>
+                    <button onclick="showDetail('leadership', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="logo-box"><img src="https://i.ibb.co/fYYF6TpV/5b61b7104037.png" class="w-full h-full object-contain"></div>
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold">Vice President, PR & Sponsorship</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2024 – 2025</span>
+                    </div>
+                    <div class="text-brand-muted font-medium mb-3">NTU Breakdance Club</div>
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Sponsorship outreach</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">O2O Marketing</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Demand Estimation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Event Promotion</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.</p>
+                    <button onclick="showDetail('leadership', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            </div>
         </section>
 
         <section id="projects" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="projects-title"></div>
-            <div class="md:col-span-3 space-y-12" id="projects-list"></div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Latest Project</div>
+            <div class="md:col-span-3 space-y-12">
+                
+            <div class="flex flex-col md:flex-row gap-6">
+                
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold">Audience Insight & Program Optimization</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Aug 2025 – Dec 2025 | CET Academic Programs</span>
+                    </div>
+                    
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">User Research</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Data Synthesis</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Operational Strategy</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Problem Solving</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.</p>
+                    <button onclick="showDetail('projects', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row gap-6">
+                
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold">Event Operations & Brand Marketing</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2024 – 2025 | NTU Breakdance Club</span>
+                    </div>
+                    
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Brand Identity</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">FMCG Sponsorship</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">O2O Marketing</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Inventory Control</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Directed end-to-end event operations, brand visual design, and sponsorship marketing for a 200+ person event, achieving 100% sell-through with zero-waste inventory.</p>
+                    <button onclick="showDetail('projects', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row gap-6">
+                
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold">User Needs Analysis & Product Design</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">School Project | Course: Project Design & Evaluation</span>
+                    </div>
+                    
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">User Research</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Statistical Analysis</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Audience Segmentation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Product Strategy</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Conducted end-to-end user research on 62 students to identify behavioral blockers for breakfast consumption, translating data insights into the foundation for a health-driven WebApp.</p>
+                    <button onclick="showDetail('projects', 2)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row gap-6">
+                
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-2xl font-bold">Full-Stack WebApp & AI Bot Development</h4>
+                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">School Project | Course: Project Design & Evaluation</span>
+                    </div>
+                    
+                    
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Product Planning</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Full-Stack Dev</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">System Architecture</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">AI Integration</span>
+            </div>
+        
+                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led the product planning and technical development of 'Breakfast Club,' using AI tools to accelerate the build of a LINE bot and React web app.</p>
+                    <button onclick="showDetail('projects', 3)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
+                </div>
+            </div>
+        
+            </div>
         </section>
 
         <section id="skills" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400" id="skills-title"></div>
+            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Core Skills</div>
             <div class="md:col-span-3">
-                <ul class="space-y-6" id="skills-list"></ul>
+                <ul class="space-y-6">
+                    
+                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
+                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Marketing & Communications</strong></span>
+                            <span class="text-brand-muted font-medium text-base"> Content Planning, Campaign Coordination, Audience Insight, Bilingual Communication</span>
+                        </li>
+                        
+                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
+                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Analytics & Operations</strong></span>
+                            <span class="text-brand-muted font-medium text-base"> Google Analytics, Excel (VLOOKUP, PivotTables), Performance Tracking, Survey Analysis</span>
+                        </li>
+                        
+                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
+                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Content Tools</strong></span>
+                            <span class="text-brand-muted font-medium text-base"> Adobe Premiere Pro, Photoshop, Canva</span>
+                        </li>
+                        
+                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
+                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Languages</strong></span>
+                            <span class="text-brand-muted font-medium text-base"> Mandarin (Native), English (Fluent)</span>
+                        </li>
+                        
+                </ul>
             </div>
         </section>
 
         <section id="contact" class="pt-10 border-t border-brand-border">
-            <h3 class="text-3xl font-bold mb-6" id="contact-title"></h3>
-            <p class="text-lg text-brand-muted mb-8" id="contact-description"></p>
+            <h3 class="text-3xl font-bold mb-6">Contact</h3>
+            <p class="text-lg text-brand-muted mb-8">I am open to opportunities in marketing, communications, and product-related roles where I can contribute through thoughtful execution and audience-focused strategy.</p>
             <div class="flex flex-wrap gap-6">
-                <a id="contact-email" href="" class="text-lg font-bold underline underline-offset-4 decoration-1 hover:text-blue-600 transition-colors"></a>
-                <a id="contact-phone" href="" class="text-lg font-bold"></a>
+                <a href="mailto:b12310052@g.ntu.edu.tw" class="text-lg font-bold underline underline-offset-4 decoration-1 hover:text-blue-600 transition-colors">b12310052@g.ntu.edu.tw</a>
+                <a href="tel:+886965281270" class="text-lg font-bold">+886-965-281-270</a>
             </div>
         </section>
     </main>
@@ -130,12 +298,11 @@
 
     <script>
         document.getElementById('year').innerText = new Date().getFullYear();
-        let currentLang = 'en';
-
+        const pageData = {"nav":{"about":"About","experience":"Experience","leadership":"Leadership","projects":"Latest Project","contact":"Contact","languageToggle":"中"},"hero":{"name":"HsinChun Chan (James)","title":"Marketing, Communications & Product Strategy","subtitle":"Combining training in Economics and Social Work with hands-on experience in content marketing, campaign coordination, and audience-focused execution.","cta":"Explore Experience"},"about":{"title":"About","description":"I am interested in roles across marketing, corporate communications, and product-related strategy. With training in both Economics and Social Work, I bring a combination of data awareness and audience understanding. My experience includes content production, campaign support, performance tracking, and cross-functional coordination. I value clear communication, thoughtful execution, and using insights to turn ideas into work that creates practical value."},"experience":{"title":"Experience","items":[{"role":"Marketing and Content Intern","company":"CET Academic Programs","companyIcon":"https://i.ibb.co/yc5K2RVx/30c014d2b932.png","period":"Aug 2025 – Dec 2025","tags":["Social Media Marketing","Content Production","Google Analytics","Bilingual Communication"],"summary":"Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.","achievements":["**Produced social media content** in multiple formats, including short-form videos and visual posts, using Premiere Pro, Photoshop, and Canva.","**Tracked traffic sources** and engagement performance with Google Analytics to support content adjustments and improve campaign effectiveness.","**Reorganized internal inventory** and contact records with Excel functions such as VLOOKUP and PivotTables, improving search efficiency and administrative workflow.","**Served as a bilingual communication bridge** between international students and local vendors, helping resolve disputes through fact-based coordination and reducing potential compensation costs."],"takeaway":"This experience strengthened my ability to connect content, operations, and communication while making decisions based on both audience needs and data signals."},{"role":"Project Assistant","company":"National Center for Theoretical Sciences (NCTS) Mathematics","companyIcon":"https://i.ibb.co/jPjHDqVM/e93c443760b7.png","period":"Feb 2026 – Present","tags":["Project Coordination","Administrative Operations","Bilingual Coordination","Event Management"],"summary":"Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.","achievements":["**Supported the coordination** and execution of national-level seminars and academic events.","**Handled administrative processes** and on-site logistics with accuracy under tight timelines.","**Provided real-time problem solving** during events to ensure smooth operations and communication.","**Maintained clear and professional communication** with scholars, speakers, and internal stakeholders."],"takeaway":"This role sharpened my ability to stay organized, respond quickly under pressure, and support complex projects with professionalism and attention to detail."}]},"leadership":{"title":"Leadership & Activities","items":[{"role":"Vice President","company":"NTU College of Social Sciences Student Association","companyIcon":"https://i.ibb.co/NgcyVfDH/538f4769e018.png","period":"2025 – Present","tags":["Strategy Realignment","Stakeholder Negotiation","Risk Management","Public Infrastructure"],"summary":"Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.","achievements":["**Redirected team strategy** away from highly sensitive and politically contentious issues, focusing resources and budget on student welfare initiatives.","**Proposed a risk management framework** and deposit SOP to address locker access disputes, successfully restoring student usage rights.","**Negotiated for the installation** of a public printer to improve access to academic resources and daily convenience for students.","**Pushed forward a campus privacy project**, including the addition of urinal partitions to improve usability and comfort.","**Revitalized open common areas** by introducing recurring community activities such as movie screenings and board games."],"takeaway":"I learned how to turn broad student concerns into concrete, negotiable proposals, and how to balance stakeholder communication, feasibility, and real user needs."},{"role":"Vice President, PR & Sponsorship","company":"NTU Breakdance Club","companyIcon":"https://i.ibb.co/fYYF6TpV/5b61b7104037.png","period":"2024 – 2025","tags":["Sponsorship outreach","O2O Marketing","Demand Estimation","Event Promotion"],"summary":"Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.","achievements":["**Integrated QR codes and Bitly links** into physical promotional materials to track offline-to-online traffic and evaluate conversion performance.","**Used survey responses** and historical participation patterns to support demand estimation and inventory planning.","**Helped secure sponsorship support** from brands including Red Bull, Monster Energy, and Taiwan Beer through proposal coordination.","**Supported promotional planning** for large-scale events involving over 200 participants and cross-campus collaboration."],"takeaway":"This experience gave me hands-on exposure to audience engagement, sponsorship communication, and using lightweight data methods to support promotion and planning."}]},"projects":{"title":"Latest Project","items":[{"name":"Audience Insight & Program Optimization","period":"Aug 2025 – Dec 2025 | CET Academic Programs","summary":"Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.","tags":["User Research","Data Synthesis","Operational Strategy","Problem Solving"],"highlights":["**Context**: The organization needed to evaluate satisfaction to optimize future marketing and operational strategies.","**My Role**: Synthesized quantitative ratings and qualitative open-ended responses from 68 participants.","**Key Insights**: Identified critical operational pain points, such as a mismatch in internship expectations and housing cleaning privacy issues.","**Data-Backed Recommendations**: Proposed an 'opt-in/opt-out' cleaning SOP and stricter expectation-alignment guidelines for internships."],"takeaway":"This project allowed me to translate user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.","fileLink":"./assets/CET_User_Research_Report.pdf"},{"name":"Event Operations & Brand Marketing","period":"2024 – 2025 | NTU Breakdance Club","summary":"Directed end-to-end event operations, brand visual design, and sponsorship marketing for a 200+ person event, achieving 100% sell-through with zero-waste inventory.","tags":["Brand Identity","FMCG Sponsorship","O2O Marketing","Inventory Control"],"highlights":["**Context**: Faced with budget constraints and unpredictable demand, requiring effective resource allocation and external funding.","**Brand Identity & Visual Execution**: Independently established the event's brand image, directing the creative process from Key Visual發想 to final graphic design.","**Stakeholder & Sponsor Coordination**: Pitched data-driven business proposals to secure sponsorships from brands like Red Bull, Monster Energy, and Taiwan Beer.","**O2O Promotion Tracking**: Integrated QR codes and Bitly links to measure offline-to-online traffic conversion rates.","**Event Execution & Inventory Control**: Engineered a demand forecasting model utilizing pre-order surveys, resulting in zero inventory waste."],"takeaway":"Through this event, I managed complex operations, coordinated with external sponsors, and independently drove creative brand execution from start to finish."},{"name":"User Needs Analysis & Product Design","period":"School Project | Course: Project Design & Evaluation","summary":"Conducted end-to-end user research on 62 students to identify behavioral blockers for breakfast consumption, translating data insights into the foundation for a health-driven WebApp.","tags":["User Research","Statistical Analysis","Audience Segmentation","Product Strategy"],"highlights":["**User Needs Assessment**: Designed a survey (N=68) evaluating dietary habits. Discovered nearly 70% of students eat breakfast irregularly.","**Data-Driven Segmentation**: Applied statistical methods (Chi-Square, Mann-Whitney U tests) to uncover behavioral variables like dormitory living.","**Pain Point Analysis**: Segmented audience into 'irregular eaters' (motivational needs) and 'regular eaters' (quality needs like low-GI).","**Product Strategy Formulation**: Translated insights into a LINE-based chatbot WebApp to track daily habits and push personalized recommendations."],"takeaway":"This research allowed me to apply statistical tools for audience segmentation and translate raw survey data into clear, actionable product features.","fileLink":"./assets/Breakfast_User_Research_Report.pdf"},{"name":"Full-Stack WebApp & AI Bot Development","period":"School Project | Course: Project Design & Evaluation","summary":"Led the product planning and technical development of 'Breakfast Club,' using AI tools to accelerate the build of a LINE bot and React web app.","tags":["Product Planning","Full-Stack Dev","System Architecture","AI Integration"],"highlights":["**AI-Assisted Full-Stack Development**: Directed an AI workflow to independently build architecture including React frontend, Flask backend, and Supabase.","**System Architecture & Security**: Migrated database writes to Flask backend and implemented Row Level Security (RLS) for data privacy.","**AI Vision Integration**: Integrated Gemini 2.5 Flash Lite API to perform real-time image recognition and output structured JSON data.","**UX & Product Strategy**: Applied the 'Audience Effect' to boost retention and engineered an 'Optimistic UI' mechanism for social interactions."],"takeaway":"This project strengthened my ability to turn a product concept into a working system, while coordinating product logic, technical structure, and implementation details.","fileLink":"./assets/Breakfast_Club_Technical_Case_Study.pdf"}]},"skills":{"title":"Core Skills","items":["**Marketing & Communications**: Content Planning, Campaign Coordination, Audience Insight, Bilingual Communication","**Analytics & Operations**: Google Analytics, Excel (VLOOKUP, PivotTables), Performance Tracking, Survey Analysis","**Content Tools**: Adobe Premiere Pro, Photoshop, Canva","**Languages**: Mandarin (Native), English (Fluent)"]},"contact":{"title":"Contact","description":"I am open to opportunities in marketing, communications, and product-related roles where I can contribute through thoughtful execution and audience-focused strategy.","email":"b12310052@g.ntu.edu.tw","phone":"+886-965-281-270"}};
         const md = (t) => t ? t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '';
 
         function showDetail(type, index) {
-            const data = siteData[currentLang][type].items[index];
+            const data = pageData[type].items[index];
             const modal = document.getElementById('detail-modal');
             const body = document.getElementById('modal-body');
             
@@ -179,7 +346,7 @@
                         <div>
                             <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">${isProject ? 'Project Highlights' : 'Key Achievements'}</div>
                             <ul class="space-y-4">
-                                ${(data.highlights || data.achievements || []).map(a => `<li class="flex gap-3 text-[0.95rem] text-brand-muted leading-relaxed"><span class="mt-2 w-1 h-1 rounded-full bg-black flex-shrink-0"></span><span>${md(a)}</span></li>`).join('')}
+                                ${(data.highlights || data.achievements || []).map(a => `<li class="flex gap-3 text-[0.95rem] text-brand-muted leading-relaxed"><span class="w-1.5 h-1.5 rounded-full bg-black mt-2 flex-shrink-0"></span><span>${md(a)}</span></li>`).join('')}
                             </ul>
                         </div>
                         ${data.takeaway ? `
@@ -199,75 +366,6 @@
             document.getElementById('detail-modal').classList.remove('active');
             document.body.style.overflow = '';
         }
-
-        function renderEntry(item, index, type) {
-            const tagsHtml = item.tags ? `
-                <div class="flex flex-wrap gap-2 mb-4">
-                    ${item.tags.map(t => `<span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">${t}</span>`).join('')}
-                </div>
-            ` : '';
-
-            const isProject = type === 'projects';
-            const iconHtml = !isProject ? `<div class="logo-box"><img src="${item.companyIcon}" class="w-full h-full object-contain"></div>` : '';
-
-            return `
-                <div class="flex flex-col md:flex-row gap-6">
-                    ${iconHtml}
-                    <div class="flex-1">
-                        <div class="flex justify-between items-start mb-2">
-                            <h4 class="${isProject ? 'text-2xl' : 'text-xl'} font-bold">${item.role || item.name}</h4>
-                            <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">${item.period}</span>
-                        </div>
-                        ${!isProject ? `<div class="text-brand-muted font-medium mb-3">${item.company}</div>` : ''}
-                        ${tagsHtml}
-                        <p class="text-sm text-brand-muted leading-relaxed mb-4">${md(item.summary)}</p>
-                        <button onclick="showDetail('${type}', ${index})" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderContent() {
-            const data = siteData[currentLang];
-            document.documentElement.lang = currentLang;
-            document.getElementById('nav-about').innerText = data.nav.about;
-            document.getElementById('nav-experience').innerText = data.nav.experience;
-            document.getElementById('nav-leadership').innerText = data.nav.leadership;
-            document.getElementById('nav-projects').innerText = data.nav.projects;
-            document.getElementById('lang-toggle').innerText = data.nav.languageToggle;
-            document.getElementById('hero-name').innerText = data.hero.name;
-            document.getElementById('hero-title').innerText = data.hero.title;
-            document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
-            document.getElementById('about-title').innerText = data.about.title;
-            document.getElementById('about-description').innerText = data.about.description;
-            document.getElementById('experience-title').innerText = data.experience.title;
-            document.getElementById('experience-list').innerHTML = data.experience.items.map((i, idx) => renderEntry(i, idx, 'experience')).join('');
-            document.getElementById('leadership-title').innerText = data.leadership.title;
-            document.getElementById('leadership-list').innerHTML = data.leadership.items.map((i, idx) => renderEntry(i, idx, 'leadership')).join('');
-            document.getElementById('projects-title').innerText = data.projects.title;
-            document.getElementById('projects-list').innerHTML = data.projects.items.map((i, idx) => renderEntry(i, idx, 'projects')).join('');
-            
-            document.getElementById('skills-title').innerText = data.skills.title;
-            document.getElementById('skills-list').innerHTML = data.skills.items.map(s => `
-                <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
-                    <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none">${md(s.split(':')[0])}</span>
-                    <span class="text-brand-muted font-medium text-base">${md(s.split(':')[1] || '')}</span>
-                </li>
-            `).join('');
-
-            document.getElementById('contact-title').innerText = data.contact.title;
-            document.getElementById('contact-description').innerText = data.contact.description;
-            document.getElementById('contact-email').href = 'mailto:' + data.contact.email;
-            document.getElementById('contact-email').innerText = data.contact.email;
-            document.getElementById('contact-phone').innerText = data.contact.phone;
-        }
-
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'zh' : 'en';
-            renderContent();
-        }
-
-        renderContent();
     </script>
 </body>
 </html>
