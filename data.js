@@ -93,6 +93,21 @@ const siteData = {
       title: "Latest Project",
       items: [
         {
+          name: "Porsche Macan Option Strategy Analysis",
+          period: "Independent Project | 2026",
+          summary: "Built an exploratory market analysis project on Taiwan’s Porsche Macan resale market to examine how selected options may relate to listing-price signals and what that may imply for option strategy and value communication.",
+          tags: ["Market Research", "Option Strategy", "Ridge Regression", "Automotive Analysis"],
+          highlights: [
+            "**Business Question**: Explored which options in Taiwan’s Porsche Macan resale market appear to generate stronger listing-price signals, and which may function more as first-owner perceived value.",
+            "**Research Design**: Collected 133 listings of 2019+ Porsche Macan models from a major Taiwan resale platform and transformed unstructured seller descriptions into option-level features.",
+            "**Modeling & Validation**: Applied Ridge Regression while controlling for year, mileage, and vehicle trim, with manual spot-checking on sampled listings to validate key option extraction consistency.",
+            "**Key Findings**: Found stronger positive resale signals for options such as Panoramic Sunroof and ACC, while features like BOSE audio and multi-way seats showed weaker or negative directional price signals.",
+            "**Business Implications**: Framed the results into exploratory discussion points for option positioning, value communication, and bundle strategy in the premium automotive market."
+          ],
+        takeaway: "This project helped me move from personal interest in automotive brands to a more structured understanding of how product configuration, buyer perception, and secondary-market signals can inform business and option strategy.",
+        fileLink: "./porsche_macan_strategy_v2.html"
+        },
+        {
           name: "Audience Insight & Program Optimization",
           period: "Aug 2025 – Dec 2025 | CET Academic Programs",
           summary: "Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.",
@@ -259,6 +274,21 @@ const siteData = {
     projects: {
       title: "最新專案",
       items: [
+         {
+            name: "Porsche Macan 台灣二手市場選配策略分析",
+            period: "獨立專案｜2026",
+            summary: "以台灣 Porsche Macan 二手市場為對象，建立探索式市場分析專案，研究特定選配與刊登價格訊號的關聯，並延伸思考其對 option strategy 與價值溝通的意涵。",
+            tags: ["市場研究", "選配策略", "Ridge Regression", "汽車產業分析"],
+            highlights: [
+              "**研究問題**：探討台灣 Porsche Macan 二手市場中，哪些選配似乎能形成較強的價格訊號，哪些則更偏向首任車主的感知價值。",
+              "**研究設計**：擷取 133 筆 2019 年以上 Porsche Macan 刊登資料，並將賣家非結構化文字描述轉換為可分析的選配特徵。",
+              "**模型與驗證**：在控制年份、里程數與車型 trim 的情況下，使用 Ridge Regression 估計方向性價格訊號，並透過人工抽樣 spot-check 驗證關鍵選配萃取的一致性。",
+              "**關鍵發現**：全景天窗與 ACC 呈現較強的正向 resale signal；BOSE 音響與多向座椅等舒適型配備則未呈現同等程度的價格支撐。",
+              "**商業意涵**：將結果轉化為 option positioning、價值溝通與 bundle strategy 的探索式討論方向，作為 premium automotive 市場觀察的輸入。"
+            ],
+            takeaway: "這個專案讓我把對汽車品牌的興趣，進一步轉化為對產品配置、買方感知與二手市場訊號之間關係的結構化理解，也讓我更確認自己想往汽車產業中的市場研究與策略職能靠近。",
+            fileLink: "./porsche_macan_strategy_v2.html"
+        },
         {
           name: "受眾洞察與營運服務優化",
           period: "2025.08 – 2025.12 | CET Academic Programs",
