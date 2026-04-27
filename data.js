@@ -93,8 +93,8 @@ const siteData = {
       title: "Latest Project",
       items: [
         {
-          name: "Porsche Macan Option Strategy Analysis",
-          period: "Independent Project | 2026",
+          name: "Resale Market Analysis",
+          period: "School Project | Course: Data Analysis and Machine Learning with Python",
           summary: "Built an exploratory market analysis project on Taiwan’s Porsche Macan resale market to examine how selected options may relate to listing-price signals and what that may imply for option strategy and value communication.",
           tags: ["Market Research", "Option Strategy", "Ridge Regression", "Automotive Analysis"],
           highlights: [
@@ -275,8 +275,8 @@ const siteData = {
       title: "最新專案",
       items: [
          {
-            name: "Porsche Macan 台灣二手市場選配策略分析",
-            period: "獨立專案｜2026",
+            name: "台灣二手車市場選配策略分析",
+            period: "課堂專案｜Python資料分析與機器學習應用",
             summary: "以台灣 Porsche Macan 二手市場為對象，建立探索式市場分析專案，研究特定選配與刊登價格訊號的關聯，並延伸思考其對 option strategy 與價值溝通的意涵。",
             tags: ["市場研究", "選配策略", "Ridge Regression", "汽車產業分析"],
             highlights: [
