@@ -10,7 +10,7 @@ const siteData = {
     },
     hero: {
       name: "HsinChun Chan (James)",
-      title: "Marketing, Communications & Product Strategy",
+      title: "Business, Brand & Product Strategy",
       subtitle: "Combining training in Economics and Social Work with hands-on experience in content marketing, campaign coordination, and audience-focused execution.",
       cta: "Explore Experience"
     },
