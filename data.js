@@ -11,8 +11,7 @@ const siteData = {
     hero: {
       name: "HsinChun Chan (James)",
       title: "Business, Brand & Product Strategy",
-      subtitle: "Combining training in Economics and Social Work with hands-on experience in content marketing, campaign coordination, and audience-focused execution.",
-      cta: "Explore Experience"
+      subtitle: "Combining training in Economics and Social Work with hands-on experience in market research, project execution, and audience-focused strategy."
     },
     about: {
       title: "About",
@@ -122,18 +121,19 @@ const siteData = {
           fileLink: "./assets/CET_User_Research_Report.pdf"
         },
         {
-          name: "Event Operations & Brand Marketing",
+          name: "Rebranding and Relaunch of “Nerds War”",
           period: "2024 – 2025 | NTU Breakdance Club",
-          summary: "Directed end-to-end event operations, brand visual design, and sponsorship marketing for a 200+ person event, achieving 100% sell-through with zero-waste inventory.",
-          tags: ["Brand Identity", "FMCG Sponsorship", "O2O Marketing", "Inventory Control"],
+          summary: "Led the rebranding and relaunch of 'Nerds War,' a long-running intercollegiate breaking competition, by redefining its purpose, rebuilding community engagement, and expanding participation beyond its original scope after the post-pandemic decline of Taiwan’s student breaking scene.",
+          tags: ["Rebranding", "Community Building", "Sponsorship", "Event Strategy"],
           highlights: [
-            "**Context**: Faced with budget constraints and unpredictable demand, requiring effective resource allocation and external funding.",
-            "**Brand Identity & Visual Execution**: Independently established the event's brand image, directing the creative process from Key Visual發想 to final graphic design.",
-            "**Stakeholder & Sponsor Coordination**: Pitched data-driven business proposals to secure sponsorships from brands like Red Bull, Monster Energy, and Taiwan Beer.",
-            "**O2O Promotion Tracking**: Integrated QR codes and Bitly links to measure offline-to-online traffic conversion rates.",
-            "**Event Execution & Inventory Control**: Engineered a demand forecasting model utilizing pre-order surveys, resulting in zero inventory waste."
+            "**Background**: 'Nerds War' had been a long-running competition among Taiwan’s top university breaking clubs, but after the pandemic, the student breaking community became fragmented and participation declined significantly.",
+            "**Brand Repositioning**: Reframed the event from being simply a stage for less-experienced student dancers into a platform for rebuilding connection, continuity, and shared identity across university breaking communities.",
+            "**Community Expansion**: Expanded outreach beyond the original participating schools to bring in more university teams and strengthen intercollegiate engagement at a time when the scene was losing momentum.",
+            "**Creative Direction & Communication**: Independently led the event’s visual identity, campaign messaging, and social media content, building a new narrative around nostalgia, passion, and generational transition.",
+            "**Partner & Execution Support**: Secured sponsorship support from brands including Taiwan Beer, Red Bull, and Cadina while coordinating promotion, event communication, and planning execution."
           ],
-          takeaway: "Through this event, I managed complex operations, coordinated with external sponsors, and independently drove creative brand execution from start to finish."
+          takeaway: "This project taught me how rebranding is not only about visuals, but about redefining meaning, rebuilding trust, and creating a stronger sense of connection around a shared platform.",
+          campaignLink: "https://www.instagram.com/nerds_war/"
         },
         {
           name: "User Needs Analysis & Product Design",
@@ -192,8 +192,8 @@ const siteData = {
     },
     hero: {
       name: "詹新群 (James)",
-      title: "行銷、企業溝通與產品策略",
-      subtitle: "結合經濟系與社工系的跨領域訓練，具備內容行銷、專案協作、數據追蹤與以受眾為導向的實務經驗。",
+      title: "商業、品牌與產品策略",
+      subtitle: "結合經濟與社工的跨領域訓練，具備市場研究、專案執行與受眾導向策略的實務經驗。",
       cta: "查看經歷"
     },
     about: {
@@ -304,18 +304,19 @@ const siteData = {
           fileLink: "./assets/CET_User_Research_Report.pdf"
         },
         {
-          name: "大型專案營運與品牌整合行銷",
+          name: "「Nerds War」品牌重啟與社群重建",
           period: "2024 – 2025 | 台大地板社",
-          summary: "統籌超過 200 人規模之大型專案營運、品牌視覺建立與贊助行銷，透過需求預測達成 100% 完售且零浪費的營運目標。",
-          tags: ["品牌視覺", "FMCG 贊助", "O2O 行銷", "庫存控管"],
+          summary: "主導校際 breaking 賽事「Nerds War」的品牌重啟與再定位。在疫情後台灣學生 breaking 社群斷層與熱度下滑的背景下，重新定義活動意義、擴大校際連結，並透過內容與溝通重建社群參與感。",
+          tags: ["品牌重啟", "社群重建", "贊助協作", "活動策略"],
           highlights: [
-            "**專案背景**：面對預算限制與不確定的商品需求，需要精準資源分配與外部商業贊助。",
-            "**品牌建立與視覺統籌**：獨立主導品牌形象建立，包辦從主視覺發想至後期全通路文宣製圖。",
-            "**利害關係人與贊助協商**：撰寫具數據佐證的企劃書，成功爭取 Red Bull、Monster 等品牌贊助。",
-            "**O2O 行銷成效追蹤**：全面導入 QR Code 與 Bit.ly，追蹤並量化「線下至線上」轉換率。",
-            "**營運落地與庫存控管**：運用問卷數據建立需求預測模型，設定 30% 安全庫存達成零浪費。"
-          ],
-          takeaway: "透過這個專案，我實際將預算控管與 O2O 數據追蹤應用於活動宣傳，並從零到一獨立執行了視覺設計與品牌包裝。"
+           "**專案背景**：八校盃 Nerds War 原為台灣頂大 breaking 社團行之有年的校際賽事，但疫情後學生 breaking 社群出現明顯斷層，參與人數與社群熱度大幅下降。",
+           "**品牌再定位**：將活動從原本「提供較少上場機會的學生一個舞台」，升級為一個強化校際連結、重建社群凝聚力與延續性的共同平台。",
+           "**社群拓展**：不再侷限於原有參與學校，而是主動擴大大學社群觸及，希望讓活動逐步發展為可由各校輪流承辦的全國性平台。",
+           "**視覺與內容統籌**：獨立主導活動的品牌敘事、主視覺方向與社群內容，重新建立以情懷、熱血與世代交替為核心的活動語言。",
+           "**贊助與執行協作**：成功爭取台灣啤酒、Red Bull、Cadina 等品牌支持，並同步處理宣傳、對外溝通與活動執行協調。"
+           ],
+           takeaway: "這個專案讓我體會到，rebranding 不只是換視覺，而是重新定義一個活動存在的價值，並透過溝通與執行把破碎的社群重新串起來。",
+           campaignLink: "https://www.instagram.com/nerds_war/"
         },
         {
           name: "使用者需求分析與產品設計",

@@ -220,12 +220,24 @@ function generateHTML(lang) {
                     <div class="lg:col-span-4">
                         \${headerHtml}
                         \${tagsHtml}
-                        \${data.fileLink ? \`
-                            <div class="mt-8 pt-6 border-t border-gray-100">
-                                <a href="\${data.fileLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                    View Document
-                                </a>
+                        \${data.fileLink || data.campaignLink ? \`
+                            <div class="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
+                                \${data.fileLink ? \`
+                                    <a href="\${data.fileLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                        </svg>
+                                        \${data.fileLink.endsWith('.html') ? 'View Project' : 'View Document'}
+                                    </a>
+                                \` : ''}
+                                \${data.campaignLink ? \`
+                                    <a href="\${data.campaignLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm8 8a3 3 0 11-6 0 3 3 0 016 0zm3.5-4.5h.01"></path>
+                                        </svg>
+                                        View Campaign
+                                    </a>
+                                \` : ''}
                             </div>
                         \` : ''}
                     </div>
