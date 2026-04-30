@@ -33,7 +33,11 @@ const siteData = {
             "**Operational Optimization**: Reorganized internal inventory and contact records with Excel functions such as VLOOKUP and PivotTables, improving search efficiency and administrative workflow.",
             "**Bilingual Coordination**: Served as a bilingual communication bridge between international students and local vendors, helping resolve disputes through fact-based coordination and reducing potential compensation costs."
           ],
-          takeaway: "This experience strengthened my ability to connect content, operations, and communication while making decisions based on both audience needs and data signals."
+          takeaway: "This experience strengthened my ability to connect content, operations, and communication while making decisions based on both audience needs and data signals.",
+          mediaLinks: [
+             { label: "Watch Program Promotion", href: "./assets/Program Promotion.mp4" },
+             { label: "Watch Social Media Reel", href: "./assets/cetstudyabroad_taiwan_1767078173_3798848832114161481_56260713129.mp4" }
+          ]
         },
         {
           role: "Project Assistant",
@@ -216,7 +220,11 @@ const siteData = {
             "**行政效率優化**：運用 Excel 函數如 VLOOKUP 與 PivotTables 重整內部庫存資料，提升檢索效率。",
             "**雙語溝通橋樑**：擔任外籍學生與在地廠商之溝通窗口，以事實釐清問題並降低潛在賠償成本。"
           ],
-          takeaway: "這段經驗讓我更熟悉如何把內容、營運與溝通串連起來，並從受眾需求與數據訊號中調整執行方向。"
+          takeaway: "這段經驗讓我更熟悉如何把內容、營運與溝通串連起來，並從受眾需求與數據訊號中調整執行方向。",
+          mediaLinks: [
+             { label: "觀看招生宣傳影片", href: "./assets/Program Promotion.mp4" },
+             { label: "觀看社群短影音", href: "./assets/cetstudyabroad_taiwan_1767078173_3798848832114161481_56260713129.mp4" }
+          ]
         },
         {
           role: "Project Assistant",

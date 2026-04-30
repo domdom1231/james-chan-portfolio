@@ -189,77 +189,99 @@ function generateHTML(lang) {
         const md = (t) => t ? t.replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>') : '';
 
         function showDetail(type, index) {
-            const data = pageData[type].items[index];
-            const modal = document.getElementById('detail-modal');
-            const body = document.getElementById('modal-body');
-            
-            const tagsHtml = data.tags ? \`
-                <div class="flex flex-wrap gap-2 mb-6">
-                    \${data.tags.map(t => \`<span class="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">\${t}</span>\`).join('')}
-                </div>
-            \` : '';
+    const data = pageData[type].items[index];
+    const modal = document.getElementById('detail-modal');
+    const body = document.getElementById('modal-body');
 
-            const isProject = type === 'projects';
-            const headerHtml = isProject ? \`
-                <div class="mb-6">
-                    <h4 class="text-3xl font-bold mb-2">\${data.name}</h4>
-                    <div class="text-brand-muted font-medium text-sm">\${data.period}</div>
-                </div>
-            \` : \`
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="logo-box"><img src="\${data.companyIcon}" class="w-full h-full object-contain"></div>
-                    <div>
-                        <h4 class="text-2xl font-bold">\${data.role}</h4>
-                        <div class="text-brand-muted text-sm">\${data.company}</div>
-                    </div>
-                </div>
-            \`;
+    const tagsHtml = data.tags ? \`
+        <div class="flex flex-wrap gap-2 mb-6">
+            \${data.tags.map(t => \`<span class="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">\${t}</span>\`).join('')}
+        </div>
+    \` : '';
 
-            body.innerHTML = \`
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                    <div class="lg:col-span-4">
-                        \${headerHtml}
-                        \${tagsHtml}
-                        \${data.fileLink || data.campaignLink ? \`
-                            <div class="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
-                                \${data.fileLink ? \`
-                                    <a href="\${data.fileLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                        </svg>
-                                        \${data.fileLink.endsWith('.html') ? 'View Project' : 'View Document'}
-                                    </a>
-                                \` : ''}
-                                \${data.campaignLink ? \`
-                                    <a href="\${data.campaignLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm8 8a3 3 0 11-6 0 3 3 0 016 0zm3.5-4.5h.01"></path>
-                                        </svg>
-                                        View Campaign
-                                    </a>
-                                \` : ''}
-                            </div>
-                        \` : ''}
-                    </div>
-                    <div class="lg:col-span-8 space-y-8">
-                        <div>
-                            <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">\${isProject ? 'Project Highlights' : 'Key Achievements'}</div>
-                            <ul class="space-y-4">
-                                \${(data.highlights || data.achievements || []).map(a => \`<li class="flex gap-3 text-[0.95rem] text-brand-muted leading-relaxed"><span class="w-1.5 h-1.5 rounded-full bg-black mt-2 flex-shrink-0"></span><span>\${md(a)}</span></li>\`).join('')}
-                            </ul>
-                        </div>
-                        \${data.takeaway ? \`
-                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Key Takeaway</div>
-                                <p class="text-[0.95rem] font-medium italic leading-relaxed text-brand-text">\${md(data.takeaway)}</p>
-                            </div>
-                        \` : ''}
-                    </div>
+    const isProject = type === 'projects';
+
+    const headerHtml = isProject ? \`
+        <div class="mb-6">
+            <h4 class="text-3xl font-bold mb-2">\${data.name}</h4>
+            <div class="text-brand-muted font-medium text-sm">\${data.period}</div>
+        </div>
+    \` : \`
+        <div class="flex items-center gap-4 mb-6">
+            <div class="logo-box"><img src="\${data.companyIcon}" class="w-full h-full object-contain"></div>
+            <div>
+                <h4 class="text-2xl font-bold">\${data.role}</h4>
+                <div class="text-brand-muted text-sm">\${data.company}</div>
+            </div>
+        </div>
+    \`;
+
+    const mediaLinksHtml = data.mediaLinks ? \`
+        <div class="mt-8 pt-6 border-t border-gray-100">
+            <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Selected Work</div>
+            <div class="flex flex-col gap-3">
+                \${data.mediaLinks.map(link => \`
+                    <a href="\${link.href}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.868v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        \${link.label}
+                    </a>
+                \`).join('')}
+            </div>
+        </div>
+    \` : '';
+
+    const resourceLinksHtml = data.fileLink || data.campaignLink ? \`
+        <div class="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
+            \${data.fileLink ? \`
+                <a href="\${data.fileLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    \${data.fileLink.endsWith('.html') ? 'View Project' : 'View Document'}
+                </a>
+            \` : ''}
+            \${data.campaignLink ? \`
+                <a href="\${data.campaignLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm8 8a3 3 0 11-6 0 3 3 0 016 0zm3.5-4.5h.01"></path>
+                    </svg>
+                    View Campaign
+                </a>
+            \` : ''}
+        </div>
+    \` : '';
+
+    body.innerHTML = \`
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-4">
+                \${headerHtml}
+                \${tagsHtml}
+                \${mediaLinksHtml}
+                \${resourceLinksHtml}
+            </div>
+            <div class="lg:col-span-8 space-y-8">
+                <div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">\${isProject ? 'Project Highlights' : 'Key Achievements'}</div>
+                    <ul class="space-y-4">
+                        \${(data.highlights || data.achievements || []).map(a => \`<li class="flex gap-3 text-[0.95rem] text-brand-muted leading-relaxed"><span class="w-1.5 h-1.5 rounded-full bg-black mt-2 flex-shrink-0"></span><span>\${md(a)}</span></li>\`).join('')}
+                    </ul>
                 </div>
-            \`;
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+                \${data.takeaway ? \`
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Key Takeaway</div>
+                        <p class="text-[0.95rem] font-medium italic leading-relaxed text-brand-text">\${md(data.takeaway)}</p>
+                    </div>
+                \` : ''}
+            </div>
+        </div>
+    \`;
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
         function closeModal() {
             document.getElementById('detail-modal').classList.remove('active');
