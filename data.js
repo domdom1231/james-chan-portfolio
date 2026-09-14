@@ -1,4 +1,3 @@
-// Content fields set to null require verified details before publication.
 const siteData = {
   "en": {
     "nav": {
@@ -98,6 +97,16 @@ const siteData = {
             "**Service Improvement:** Synthesized student insights into recommendations on communication, expectation-setting, and local support.",
             "**Cross-cultural Operations:** Coordinated international students, local partners, and internal teams to resolve operational issues.",
             "**Partner Data Management:** Restructured 250+ partner records to improve information retrieval and internal coordination."
+          ],
+          "mediaLinks": [
+            {
+              "label": "Watch Program Promotion",
+              "href": "./assets/Program Promotion.mp4"
+            },
+            {
+              "label": "Watch Social Media Reel",
+              "href": "./assets/cetstudyabroad_taiwan_1767078173_3798848832114161481_56260713129.mp4"
+            }
           ]
         },
         {
@@ -111,7 +120,12 @@ const siteData = {
             "Academic Operations"
           ],
           "summary": "Support academic events and research-related operations involving domestic and international scholars, coordinating administrative processes and cross-functional communication.",
-          "achievements": []
+          "achievements": [
+            "**Event Coordination**: Supported the coordination and execution of national-level seminars and academic events.",
+            "**Administrative Operations**: Handled administrative processes and on-site logistics with accuracy under tight timelines.",
+            "**Crisis Management**: Provided real-time problem solving during events to ensure smooth operations and communication.",
+            "**Stakeholder Communication**: Maintained clear and professional communication with scholars, speakers, and internal stakeholders."
+          ]
         }
       ]
     },
@@ -318,6 +332,16 @@ const siteData = {
             "**服務改善：** 彙整學生洞察，提出溝通方式、期待管理與在地支援的改善建議。",
             "**跨文化營運：** 協調外籍學生、在地夥伴與內部團隊，處理營運問題。",
             "**夥伴資料管理：** 重整 250 多筆夥伴紀錄，改善資訊檢索與內部協作。"
+          ],
+          "mediaLinks": [
+            {
+              "label": "觀看招生宣傳影片",
+              "href": "./assets/Program Promotion.mp4"
+            },
+            {
+              "label": "觀看社群短影音",
+              "href": "./assets/cetstudyabroad_taiwan_1767078173_3798848832114161481_56260713129.mp4"
+            }
           ]
         },
         {
@@ -331,7 +355,12 @@ const siteData = {
             "學術營運"
           ],
           "summary": "支援國內外學者參與的學術活動與研究相關營運，協調行政流程與跨單位溝通。",
-          "achievements": []
+          "achievements": [
+            "**學術活動規劃**：支援國家級研討會與學術活動之規劃與執行。",
+            "**時程管理執行**：在時程緊湊的情況下處理行政流程與現場協調工作。",
+            "**危機處理應對**：面對活動中的突發狀況，能快速應對並維持整體流程順暢。",
+            "**專業同仁溝通**：與學者、講者及內部同仁保持清楚且專業的溝通。"
+          ]
         }
       ]
     },
