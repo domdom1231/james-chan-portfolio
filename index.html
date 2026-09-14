@@ -1,423 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HsinChun Chan (James) | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-bg': '#ffffff',
-                        'brand-text': '#111111',
-                        'brand-muted': '#666666',
-                        'brand-border': '#eeeeee',
-                        'brand-accent': '#000000',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        body { background: #ffffff; color: #111111; line-height: 1.5; }
-        b, strong { font-weight: 700; color: #000; }
-        
-        .logo-box {
-            width: 80px; height: 80px; border-radius: 12px; background: #fff;
-            border: 1px solid #eee; display: flex; align-items: center; justify-content: center;
-            overflow: hidden; flex-shrink: 0; padding: 6px;
-        }
-        .logo-box img[src*="5b61b7104037"] { background-color: #000; width: 100%; height: 100%; object-fit: contain; margin: -6px; padding: 10px; }
-        
-        .modal {
-            display: none; position: fixed; inset: 0; z-index: 100;
-            background: rgba(0,0,0,0.4); backdrop-blur: 4px;
-            align-items: center; justify-content: center; padding: 20px;
-        }
-        .modal.active { display: flex; }
-        .modal-content {
-            background: white; width: 100%; max-width: 800px; border-radius: 24px;
-            padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            max-height: 90vh; overflow-y: auto; position: relative;
-        }
-    </style>
-</head>
-<body class="antialiased font-sans">
-    <div id="detail-modal" class="modal" onclick="closeModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-black text-2xl">&times;</button>
-            <div id="modal-body"></div>
-        </div>
-    </div>
-
-    <nav class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-border">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="text-lg font-bold tracking-tight">James Chan</a>
-            <div class="flex items-center gap-6 text-sm font-medium">
-                <div class="hidden md:flex gap-6">
-                    <a href="#about" class="text-brand-muted hover:text-black">About</a>
-                    <a href="#experience" class="text-brand-muted hover:text-black">Experience</a>
-                    <a href="#leadership" class="text-brand-muted hover:text-black">Leadership</a>
-                    <a href="#projects" class="text-brand-muted hover:text-black">Latest Project</a>
-                </div>
-                <a href="zh.html" class="border border-brand-border px-3 py-1 rounded-full text-[10px] font-bold tracking-widest hover:bg-gray-50 transition-colors inline-block">中</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-24">
-        <section class="py-10">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">HsinChun Chan (James)</h1>
-            <h2 class="text-xl md:text-2xl text-brand-muted mb-8">Business, Brand & Product Strategy</h2>
-            <p class="max-w-2xl text-lg text-brand-muted">Combining training in Economics and Social Work with hands-on experience in market research, project execution, and audience-focused strategy.</p>
-        </section>
-
-        <section id="about" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">About</div>
-            <div class="md:col-span-3">
-                <p class="text-lg text-brand-text leading-relaxed">I am interested in roles across marketing, corporate communications, and product-related strategy. With training in both Economics and Social Work, I bring a combination of data awareness and audience understanding. My experience includes content production, campaign support, performance tracking, and cross-functional coordination. I value clear communication, thoughtful execution, and using insights to turn ideas into work that creates practical value.</p>
-            </div>
-        </section>
-
-        <section id="experience" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Experience</div>
-            <div class="md:col-span-3 space-y-12">
-                
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="logo-box"><img src="https://i.ibb.co/yc5K2RVx/30c014d2b932.png" class="w-full h-full object-contain"></div>
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold">Marketing and Content Intern</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Aug 2025 – Dec 2025</span>
-                    </div>
-                    <div class="text-brand-muted font-medium mb-3">CET Academic Programs</div>
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Social Media Marketing</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Content Production</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Google Analytics</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Bilingual Communication</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.</p>
-                    <button onclick="showDetail('experience', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="logo-box"><img src="https://i.ibb.co/jPjHDqVM/e93c443760b7.png" class="w-full h-full object-contain"></div>
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold">Project Assistant</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Feb 2026 – Present</span>
-                    </div>
-                    <div class="text-brand-muted font-medium mb-3">National Center for Theoretical Sciences (NCTS) Mathematics</div>
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Project Coordination</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Administrative Operations</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Bilingual Coordination</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Event Management</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.</p>
-                    <button onclick="showDetail('experience', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            </div>
-        </section>
-
-        <section id="leadership" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Leadership & Activities</div>
-            <div class="md:col-span-3 space-y-12">
-                
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="logo-box"><img src="https://i.ibb.co/NgcyVfDH/538f4769e018.png" class="w-full h-full object-contain"></div>
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold">Vice President</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2025 – Present</span>
-                    </div>
-                    <div class="text-brand-muted font-medium mb-3">NTU College of Social Sciences Student Association</div>
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Strategy Realignment</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Stakeholder Negotiation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Risk Management</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Public Infrastructure</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.</p>
-                    <button onclick="showDetail('leadership', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="logo-box"><img src="https://i.ibb.co/fYYF6TpV/5b61b7104037.png" class="w-full h-full object-contain"></div>
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-xl font-bold">Vice President, PR & Sponsorship</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2024 – 2025</span>
-                    </div>
-                    <div class="text-brand-muted font-medium mb-3">NTU Breakdance Club</div>
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Sponsorship outreach</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">O2O Marketing</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Demand Estimation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Event Promotion</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.</p>
-                    <button onclick="showDetail('leadership', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            </div>
-        </section>
-
-        <section id="projects" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Latest Project</div>
-            <div class="md:col-span-3 space-y-12">
-                
-            <div class="flex flex-col md:flex-row gap-6">
-                
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-2xl font-bold">Resale Market Analysis</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">School Project | Course: Data Analysis and Machine Learning with Python</span>
-                    </div>
-                    
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Market Research</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Option Strategy</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Ridge Regression</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Automotive Analysis</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Built an exploratory market analysis project on Taiwan’s Porsche Macan resale market to examine how selected options may relate to listing-price signals and what that may imply for option strategy and value communication.</p>
-                    <button onclick="showDetail('projects', 0)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-2xl font-bold">Audience Insight & Program Optimization</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">Aug 2025 – Dec 2025 | CET Academic Programs</span>
-                    </div>
-                    
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">User Research</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Data Synthesis</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Operational Strategy</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Problem Solving</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.</p>
-                    <button onclick="showDetail('projects', 1)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-2xl font-bold">Rebranding and Relaunch of “Nerds War”</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">2024 – 2025 | NTU Breakdance Club</span>
-                    </div>
-                    
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Rebranding</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Community Building</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Sponsorship</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Event Strategy</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led the rebranding and relaunch of 'Nerds War,' a long-running intercollegiate breaking competition, by redefining its purpose, rebuilding community engagement, and expanding participation beyond its original scope after the post-pandemic decline of Taiwan’s student breaking scene.</p>
-                    <button onclick="showDetail('projects', 2)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-2xl font-bold">User Needs Analysis & Product Design</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">School Project | Course: Project Design & Evaluation</span>
-                    </div>
-                    
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">User Research</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Statistical Analysis</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Audience Segmentation</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Product Strategy</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Conducted end-to-end user research on 62 students to identify behavioral blockers for breakfast consumption, translating data insights into the foundation for a health-driven WebApp.</p>
-                    <button onclick="showDetail('projects', 3)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            <div class="flex flex-col md:flex-row gap-6">
-                
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="text-2xl font-bold">Full-Stack WebApp & AI Bot Development</h4>
-                        <span class="text-xs font-bold text-gray-300 uppercase tracking-widest">School Project | Course: Project Design & Evaluation</span>
-                    </div>
-                    
-                    
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Product Planning</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">Full-Stack Dev</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">System Architecture</span><span class="px-2 py-0.5 bg-gray-50 text-gray-400 text-[9px] font-bold rounded-full border border-gray-100 uppercase tracking-tighter">AI Integration</span>
-            </div>
-        
-                    <p class="text-sm text-brand-muted leading-relaxed mb-4">Led the product planning and technical development of 'Breakfast Club,' using AI tools to accelerate the build of a LINE bot and React web app.</p>
-                    <button onclick="showDetail('projects', 4)" class="text-xs font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity">View Details</button>
-                </div>
-            </div>
-        
-            </div>
-        </section>
-
-        <section id="skills" class="pt-10 border-t border-brand-border grid md:grid-cols-4 gap-8">
-            <div class="text-xs font-bold uppercase tracking-widest text-gray-400">Core Skills</div>
-            <div class="md:col-span-3">
-                <ul class="space-y-6">
-                    
-                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
-                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Marketing & Communications</strong></span>
-                            <span class="text-brand-muted font-medium text-base"> Content Planning, Campaign Coordination, Audience Insight, Bilingual Communication</span>
-                        </li>
-                        
-                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
-                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Analytics & Operations</strong></span>
-                            <span class="text-brand-muted font-medium text-base"> Google Analytics, Excel (VLOOKUP, PivotTables), Performance Tracking, Survey Analysis</span>
-                        </li>
-                        
-                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
-                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Content Tools</strong></span>
-                            <span class="text-brand-muted font-medium text-base"> Adobe Premiere Pro, Photoshop, Canva</span>
-                        </li>
-                        
-                        <li class="group flex items-baseline gap-6 border-b border-brand-border pb-6 last:border-0">
-                            <span class="text-brand-text font-bold text-lg min-w-[200px] leading-none"><strong>Languages</strong></span>
-                            <span class="text-brand-muted font-medium text-base"> Mandarin (Native), English (Fluent)</span>
-                        </li>
-                        
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact" class="pt-10 border-t border-brand-border">
-            <h3 class="text-3xl font-bold mb-6">Contact</h3>
-            <p class="text-lg text-brand-muted mb-8">I am open to opportunities in marketing, communications, and product-related roles where I can contribute through thoughtful execution and audience-focused strategy.</p>
-            <div class="flex flex-wrap gap-6">
-                <a href="mailto:b12310052@g.ntu.edu.tw" class="text-lg font-bold underline underline-offset-4 decoration-1 hover:text-blue-600 transition-colors">b12310052@g.ntu.edu.tw</a>
-                <a href="tel:+886965281270" class="text-lg font-bold">+886-965-281-270</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-10 text-center text-xs text-gray-400">
-        &copy; <span id="year"></span> James Chan.
-    </footer>
-
-    <script>
-        document.getElementById('year').innerText = new Date().getFullYear();
-        const pageData = {"nav":{"about":"About","experience":"Experience","leadership":"Leadership","projects":"Latest Project","contact":"Contact","languageToggle":"中"},"hero":{"name":"HsinChun Chan (James)","title":"Business, Brand & Product Strategy","subtitle":"Combining training in Economics and Social Work with hands-on experience in market research, project execution, and audience-focused strategy."},"about":{"title":"About","description":"I am interested in roles across marketing, corporate communications, and product-related strategy. With training in both Economics and Social Work, I bring a combination of data awareness and audience understanding. My experience includes content production, campaign support, performance tracking, and cross-functional coordination. I value clear communication, thoughtful execution, and using insights to turn ideas into work that creates practical value."},"experience":{"title":"Experience","items":[{"role":"Marketing and Content Intern","company":"CET Academic Programs","companyIcon":"https://i.ibb.co/yc5K2RVx/30c014d2b932.png","period":"Aug 2025 – Dec 2025","tags":["Social Media Marketing","Content Production","Google Analytics","Bilingual Communication"],"summary":"Supported marketing and content operations for an international education organization, covering social media content production, campaign coordination, data tracking, and bilingual communication.","achievements":["**Social Media Production**: Produced social media content in multiple formats, including short-form videos and visual posts, using Premiere Pro, Photoshop, and Canva.","**Data Tracking & Analysis**: Tracked traffic sources and engagement performance with Google Analytics to support content adjustments and improve campaign effectiveness.","**Operational Optimization**: Reorganized internal inventory and contact records with Excel functions such as VLOOKUP and PivotTables, improving search efficiency and administrative workflow.","**Bilingual Coordination**: Served as a bilingual communication bridge between international students and local vendors, helping resolve disputes through fact-based coordination and reducing potential compensation costs."],"takeaway":"This experience strengthened my ability to connect content, operations, and communication while making decisions based on both audience needs and data signals.","mediaLinks":[{"label":"Watch Program Promotion","href":"./assets/Program Promotion.mp4"},{"label":"Watch Social Media Reel","href":"./assets/cetstudyabroad_taiwan_1767078173_3798848832114161481_56260713129.mp4"}]},{"role":"Project Assistant","company":"National Center for Theoretical Sciences (NCTS) Mathematics","companyIcon":"https://i.ibb.co/jPjHDqVM/e93c443760b7.png","period":"Feb 2026 – Present","tags":["Project Coordination","Administrative Operations","Bilingual Coordination","Event Management"],"summary":"Provide project and administrative support for academic events and research-related operations in a fast-paced environment involving domestic and international scholars.","achievements":["**Event Coordination**: Supported the coordination and execution of national-level seminars and academic events.","**Administrative Operations**: Handled administrative processes and on-site logistics with accuracy under tight timelines.","**Crisis Management**: Provided real-time problem solving during events to ensure smooth operations and communication.","**Stakeholder Communication**: Maintained clear and professional communication with scholars, speakers, and internal stakeholders."],"takeaway":"This role sharpened my ability to stay organized, respond quickly under pressure, and support complex projects with professionalism and attention to detail."}]},"leadership":{"title":"Leadership & Activities","items":[{"role":"Vice President","company":"NTU College of Social Sciences Student Association","companyIcon":"https://i.ibb.co/NgcyVfDH/538f4769e018.png","period":"2025 – Present","tags":["Strategy Realignment","Stakeholder Negotiation","Risk Management","Public Infrastructure"],"summary":"Led student welfare and campus improvement initiatives by aligning team resources with practical student needs and coordinating with university stakeholders.","achievements":["**Strategic Realignment**: Redirected team strategy away from highly sensitive and politically contentious issues, focusing resources and budget on student welfare initiatives.","**Risk Management**: Proposed a risk management framework and deposit SOP to address locker access disputes, successfully restoring student usage rights.","**Public Infrastructure Advocacy**: Negotiated for the installation of a public printer to improve access to academic resources and daily convenience for students.","**Campus Privacy Improvement**: Pushed forward a campus privacy project, including the addition of urinal partitions to improve usability and comfort.","**Community Engagement**: Revitalized open common areas by introducing recurring community activities such as movie screenings and board games."],"takeaway":"I learned how to turn broad student concerns into concrete, negotiable proposals, and how to balance stakeholder communication, feasibility, and real user needs."},{"role":"Vice President, PR & Sponsorship","company":"NTU Breakdance Club","companyIcon":"https://i.ibb.co/fYYF6TpV/5b61b7104037.png","period":"2024 – 2025","tags":["Sponsorship outreach","O2O Marketing","Demand Estimation","Event Promotion"],"summary":"Led external communication, sponsorship outreach, and event promotion for club activities, with a focus on audience growth, conversion, and resource planning.","achievements":["**O2O Marketing Tracking**: Integrated QR codes and Bitly links into physical promotional materials to track offline-to-online traffic and evaluate conversion performance.","**Demand Forecasting**: Used survey responses and historical participation patterns to support demand estimation and inventory planning.","**Sponsorship Negotiation**: Helped secure sponsorship support from brands including Red Bull, Monster Energy, and Taiwan Beer through proposal coordination.","**Event Promotion**: Supported promotional planning for large-scale events involving over 200 participants and cross-campus collaboration."],"takeaway":"This experience gave me hands-on exposure to audience engagement, sponsorship communication, and using lightweight data methods to support promotion and planning."}]},"projects":{"title":"Latest Project","items":[{"name":"Resale Market Analysis","period":"School Project | Course: Data Analysis and Machine Learning with Python","summary":"Built an exploratory market analysis project on Taiwan’s Porsche Macan resale market to examine how selected options may relate to listing-price signals and what that may imply for option strategy and value communication.","tags":["Market Research","Option Strategy","Ridge Regression","Automotive Analysis"],"highlights":["**Business Question**: Explored which options in Taiwan’s Porsche Macan resale market appear to generate stronger listing-price signals, and which may function more as first-owner perceived value.","**Research Design**: Collected 133 listings of 2019+ Porsche Macan models from a major Taiwan resale platform and transformed unstructured seller descriptions into option-level features.","**Modeling & Validation**: Applied Ridge Regression while controlling for year, mileage, and vehicle trim, with manual spot-checking on sampled listings to validate key option extraction consistency.","**Key Findings**: Found stronger positive resale signals for options such as Panoramic Sunroof and ACC, while features like BOSE audio and multi-way seats showed weaker or negative directional price signals.","**Business Implications**: Framed the results into exploratory discussion points for option positioning, value communication, and bundle strategy in the premium automotive market."],"takeaway":"This project helped me move from personal interest in automotive brands to a more structured understanding of how product configuration, buyer perception, and secondary-market signals can inform business and option strategy.","fileLink":"./porsche_macan_strategy_v2.html"},{"name":"Audience Insight & Program Optimization","period":"Aug 2025 – Dec 2025 | CET Academic Programs","summary":"Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.","tags":["User Research","Data Synthesis","Operational Strategy","Problem Solving"],"highlights":["**Context**: The organization needed to evaluate satisfaction to optimize future marketing and operational strategies.","**My Role**: Synthesized quantitative ratings and qualitative open-ended responses from 68 participants.","**Key Insights**: Identified critical operational pain points, such as a mismatch in internship expectations and housing cleaning privacy issues.","**Data-Backed Recommendations**: Proposed an 'opt-in/opt-out' cleaning SOP and stricter expectation-alignment guidelines for internships."],"takeaway":"This project allowed me to translate user feedback into actionable operational adjustments, bridging the gap between audience insights and business execution.","fileLink":"./assets/CET_User_Research_Report.pdf"},{"name":"Rebranding and Relaunch of “Nerds War”","period":"2024 – 2025 | NTU Breakdance Club","summary":"Led the rebranding and relaunch of 'Nerds War,' a long-running intercollegiate breaking competition, by redefining its purpose, rebuilding community engagement, and expanding participation beyond its original scope after the post-pandemic decline of Taiwan’s student breaking scene.","tags":["Rebranding","Community Building","Sponsorship","Event Strategy"],"highlights":["**Background**: 'Nerds War' had been a long-running competition among Taiwan’s top university breaking clubs, but after the pandemic, the student breaking community became fragmented and participation declined significantly.","**Brand Repositioning**: Reframed the event from being simply a stage for less-experienced student dancers into a platform for rebuilding connection, continuity, and shared identity across university breaking communities.","**Community Expansion**: Expanded outreach beyond the original participating schools to bring in more university teams and strengthen intercollegiate engagement at a time when the scene was losing momentum.","**Creative Direction & Communication**: Independently led the event’s visual identity, campaign messaging, and social media content, building a new narrative around nostalgia, passion, and generational transition.","**Partner & Execution Support**: Secured sponsorship support from brands including Taiwan Beer, Red Bull, and Cadina while coordinating promotion, event communication, and planning execution."],"takeaway":"This project taught me how rebranding is not only about visuals, but about redefining meaning, rebuilding trust, and creating a stronger sense of connection around a shared platform.","campaignLink":"https://www.instagram.com/nerds_war/"},{"name":"User Needs Analysis & Product Design","period":"School Project | Course: Project Design & Evaluation","summary":"Conducted end-to-end user research on 62 students to identify behavioral blockers for breakfast consumption, translating data insights into the foundation for a health-driven WebApp.","tags":["User Research","Statistical Analysis","Audience Segmentation","Product Strategy"],"highlights":["**User Needs Assessment**: Designed a survey (N=68) evaluating dietary habits. Discovered nearly 70% of students eat breakfast irregularly.","**Data-Driven Segmentation**: Applied statistical methods (Chi-Square, Mann-Whitney U tests) to uncover behavioral variables like dormitory living.","**Pain Point Analysis**: Segmented audience into 'irregular eaters' (motivational needs) and 'regular eaters' (quality needs like low-GI).","**Product Strategy Formulation**: Translated insights into a LINE-based chatbot WebApp to track daily habits and push personalized recommendations."],"takeaway":"This research allowed me to apply statistical tools for audience segmentation and translate raw survey data into clear, actionable product features.","fileLink":"./assets/Breakfast_User_Research_Report.pdf"},{"name":"Full-Stack WebApp & AI Bot Development","period":"School Project | Course: Project Design & Evaluation","summary":"Led the product planning and technical development of 'Breakfast Club,' using AI tools to accelerate the build of a LINE bot and React web app.","tags":["Product Planning","Full-Stack Dev","System Architecture","AI Integration"],"highlights":["**AI-Assisted Full-Stack Development**: Directed an AI workflow to independently build architecture including React frontend, Flask backend, and Supabase.","**System Architecture & Security**: Migrated database writes to Flask backend and implemented Row Level Security (RLS) for data privacy.","**AI Vision Integration**: Integrated Gemini 2.5 Flash Lite API to perform real-time image recognition and output structured JSON data.","**UX & Product Strategy**: Applied the 'Audience Effect' to boost retention and engineered an 'Optimistic UI' mechanism for social interactions."],"takeaway":"This project strengthened my ability to turn a product concept into a working system, while coordinating product logic, technical structure, and implementation details.","fileLink":"./assets/Breakfast_Club_Technical_Case_Study.pdf"}]},"skills":{"title":"Core Skills","items":["**Marketing & Communications**: Content Planning, Campaign Coordination, Audience Insight, Bilingual Communication","**Analytics & Operations**: Google Analytics, Excel (VLOOKUP, PivotTables), Performance Tracking, Survey Analysis","**Content Tools**: Adobe Premiere Pro, Photoshop, Canva","**Languages**: Mandarin (Native), English (Fluent)"]},"contact":{"title":"Contact","description":"I am open to opportunities in marketing, communications, and product-related roles where I can contribute through thoughtful execution and audience-focused strategy.","email":"b12310052@g.ntu.edu.tw","phone":"+886-965-281-270"}};
-        const md = (t) => t ? t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '';
-
-        function showDetail(type, index) {
-    const data = pageData[type].items[index];
-    const modal = document.getElementById('detail-modal');
-    const body = document.getElementById('modal-body');
-
-    const tagsHtml = data.tags ? `
-        <div class="flex flex-wrap gap-2 mb-6">
-            ${data.tags.map(t => `<span class="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase tracking-wider">${t}</span>`).join('')}
-        </div>
-    ` : '';
-
-    const isProject = type === 'projects';
-
-    const headerHtml = isProject ? `
-        <div class="mb-6">
-            <h4 class="text-3xl font-bold mb-2">${data.name}</h4>
-            <div class="text-brand-muted font-medium text-sm">${data.period}</div>
-        </div>
-    ` : `
-        <div class="flex items-center gap-4 mb-6">
-            <div class="logo-box"><img src="${data.companyIcon}" class="w-full h-full object-contain"></div>
-            <div>
-                <h4 class="text-2xl font-bold">${data.role}</h4>
-                <div class="text-brand-muted text-sm">${data.company}</div>
-            </div>
-        </div>
-    `;
-
-    const mediaLinksHtml = data.mediaLinks ? `
-        <div class="mt-8 pt-6 border-t border-gray-100">
-            <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Selected Work</div>
-            <div class="flex flex-col gap-3">
-                ${data.mediaLinks.map(link => `
-                    <a href="${link.href}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.868v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        ${link.label}
-                    </a>
-                `).join('')}
-            </div>
-        </div>
-    ` : '';
-
-    const resourceLinksHtml = data.fileLink || data.campaignLink ? `
-        <div class="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
-            ${data.fileLink ? `
-                <a href="${data.fileLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    ${data.fileLink.endsWith('.html') ? 'View Project' : 'View Document'}
-                </a>
-            ` : ''}
-            ${data.campaignLink ? `
-                <a href="${data.campaignLink}" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black hover:opacity-60 transition-opacity">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm8 8a3 3 0 11-6 0 3 3 0 016 0zm3.5-4.5h.01"></path>
-                    </svg>
-                    View Campaign
-                </a>
-            ` : ''}
-        </div>
-    ` : '';
-
-    body.innerHTML = `
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div class="lg:col-span-4">
-                ${headerHtml}
-                ${tagsHtml}
-                ${mediaLinksHtml}
-                ${resourceLinksHtml}
-            </div>
-            <div class="lg:col-span-8 space-y-8">
-                <div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">${isProject ? 'Project Highlights' : 'Key Achievements'}</div>
-                    <ul class="space-y-4">
-                        ${(data.highlights || data.achievements || []).map(a => `<li class="flex gap-3 text-[0.95rem] text-brand-muted leading-relaxed"><span class="w-1.5 h-1.5 rounded-full bg-black mt-2 flex-shrink-0"></span><span>${md(a)}</span></li>`).join('')}
-                    </ul>
-                </div>
-                ${data.takeaway ? `
-                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Key Takeaway</div>
-                        <p class="text-[0.95rem] font-medium italic leading-relaxed text-brand-text">${md(data.takeaway)}</p>
-                    </div>
-                ` : ''}
-            </div>
-        </div>
-    `;
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-        function closeModal() {
-            document.getElementById('detail-modal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    </script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>James Chan | Business Development, Market Entry &amp; Product Operations</title><meta name="description" content="I am an NTU student majoring in Social Work with a minor in Economics, with internship experience across multinational companies, startups, and international education. Combining training in Social Work and Economics with hands-on experience in business development, market research, new-market entry, and process optimization.">
+<meta property="og:title" content="James Chan | Business Development, Market Entry &amp; Product Operations"><meta property="og:description" content="I am an NTU student majoring in Social Work with a minor in Economics, with internship experience across multinational companies, startups, and international education. Combining training in Social Work and Economics with hands-on experience in business development, market research, new-market entry, and process optimization."><meta property="og:type" content="website"><meta property="og:locale" content="en_US">
+<style>
+:root{color-scheme:light;--ink:#172720;--muted:#526059;--line:#dce1dc;--accent:#315b45}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:#fcfcf9;color:var(--ink);font-family:Arial,"Noto Sans TC",sans-serif;line-height:1.7}a{color:inherit;text-underline-offset:5px}a:hover{color:var(--accent)}a:focus-visible,summary:focus-visible{outline:3px solid #597c62;outline-offset:5px}.skip{position:absolute;left:12px;top:-100px}.skip:focus{top:10px;z-index:10;background:white;padding:8px}nav{position:sticky;top:0;z-index:5;background:#fcfcf9f5;border-bottom:1px solid var(--line)}.nav-inner{max-width:1160px;margin:auto;padding:20px 32px;display:flex;align-items:center;gap:28px;justify-content:space-between}.brand{font-weight:700;text-decoration:none;white-space:nowrap}.nav-links{display:flex;gap:21px;flex-wrap:wrap;font-size:13px}.nav-links a{text-decoration:none}.language{border:1px solid var(--line);padding:4px 12px;text-decoration:none;font-size:12px;white-space:nowrap}main{max-width:1100px;margin:auto;padding:0 32px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(37px,5vw,68px);line-height:1.1;letter-spacing:-.045em;margin-bottom:25px;max-width:850px}h2{font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:600}h3{font-size:25px;line-height:1.3;letter-spacing:-.02em;margin-bottom:7px}.hero{padding:85px 0 72px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:25px}.hero-title{font-size:clamp(21px,2.6vw,30px);line-height:1.4;max-width:850px;margin-bottom:20px}.hero-intro{max-width:720px;color:var(--muted);font-size:17px}.hero-links{display:flex;gap:25px;margin-top:28px;font-size:14px}.section{border-top:1px solid var(--line);padding:44px 0 58px;display:grid;grid-template-columns:170px minmax(0,1fr);gap:35px}.section>h2{color:var(--muted);padding-top:5px}.about p{font-size:16px;max-width:780px}.entry{padding:0 0 32px;margin-bottom:32px;border-bottom:1px solid var(--line)}.entry:last-child{border:0;padding-bottom:0;margin-bottom:0}.entry-top{display:flex;justify-content:space-between;gap:25px}.role{font-size:17px;margin-bottom:3px}.descriptor{font-size:16px;color:var(--muted);margin-bottom:3px}.dates{font-size:12px;color:var(--muted);flex-shrink:0;text-align:right;line-height:1.8}.tags{font-size:12px;color:var(--accent);margin:13px 0 18px;line-height:1.9}.summary{font-size:15px;color:var(--muted);margin-bottom:15px}.metric{display:flex;align-items:baseline;gap:20px;margin:22px 0;padding:20px 0;border-block:1px solid #c8d3c9}.metric strong{font-size:30px;line-height:1.2;letter-spacing:-.03em}.metric span{font-size:12px;color:var(--muted)}.contributions{padding-left:20px;margin:15px 0 0;font-size:14px;color:var(--muted)}.contributions li{padding-left:3px;margin-bottom:12px}.contributions strong{color:var(--ink)}.featured h3{font-size:29px}.featured{border-left:3px solid var(--accent);padding-left:25px}details summary{cursor:pointer;font-size:13px;text-decoration:underline;text-underline-offset:4px;list-style-position:inside}.resource{display:inline-block;margin:16px 22px 0 0;font-size:13px}.skills{list-style:none;padding:0;margin:0}.skills li{padding:0 0 20px;margin-bottom:20px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}.skills strong{display:block;font-size:16px;margin-bottom:8px;color:var(--ink)}.contact-copy{font-size:19px;max-width:750px}.contact-links{display:flex;gap:18px 26px;flex-wrap:wrap;align-items:baseline}.contact-links a{overflow-wrap:anywhere;font-size:15px}.contact-links .resource{margin:0}footer{max-width:1100px;margin:auto;padding:20px 32px 40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+.company-logos{display:flex;align-items:center;gap:14px;margin-bottom:18px}.company-logos img{width:88px;height:88px;object-fit:contain;background:white;border:1px solid var(--line);border-radius:8px;padding:4px}
+@media(max-width:850px){.nav-inner{gap:16px;flex-wrap:wrap;padding:14px 22px}.nav-links{order:3;width:100%;gap:8px 20px}.section{grid-template-columns:1fr;gap:17px}.section>h2{margin-bottom:0}.hero{padding:55px 0}.language{margin-left:auto}html{scroll-padding-top:130px}}
+@media(max-width:480px){main{padding:0 22px}.hero{padding:35px 0 40px}h1{font-size:39px}.hero-title{font-size:22px}.hero-intro{font-size:15px}.eyebrow{margin-bottom:16px}.entry-top{flex-direction:column;gap:8px}.dates{text-align:left;margin-bottom:0}.metric{align-items:flex-start;flex-direction:column;gap:8px}.metric strong{font-size:27px}.featured{padding-left:16px}h3,.featured h3{font-size:23px}.section{padding:30px 0 40px}.nav-links{font-size:12px;gap:8px 16px}.contact-copy{font-size:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a><nav aria-label="Main navigation"><div class="nav-inner"><a class="brand" href="#main">James Chan</a><div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Selected Projects</a><a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="language" href="zh.html" lang="zh-Hant" aria-label="切換至繁體中文">中</a></div></nav>
+<main id="main"><header class="hero"><p class="eyebrow">National Taiwan University · Portfolio</p><h1>HsinChun Chan (James)</h1><p class="hero-title">Business Development, Market Entry &amp; Product Operations</p><p class="hero-intro">Combining training in Social Work and Economics with hands-on experience in business development, market research, new-market entry, and process optimization.</p><div class="hero-links"><a href="#experience">Experience ↓</a><a href="#contact">Get in touch ↗</a></div></header>
+<section class="section" id="about"><h2>About</h2><div class="about"><p>I am an NTU student majoring in Social Work with a minor in Economics, with internship experience across multinational companies, startups, and international education.</p><p>Through roles at PMI, Everytime, and CET Academic Programs, I have worked on business development optimization, Taiwan market entry, customer and competitor research, and service improvement. My experience ranges from building data-driven lead generation processes and conducting field market validation to analyzing student communities and translating user insights into practical recommendations.</p><p>I am particularly interested in solving business problems that require structured analysis, market understanding, and cross-functional execution, while using technology and data as practical tools to improve decision-making.</p></div></section>
+<section class="section" id="experience"><h2>Experience</h2><div><article class="entry experience-entry featured">
+   <div class="company-logos"><img src="./assets/logos/pmi.png" alt="Philip Morris International" width="88" height="88" loading="lazy"></div>
+   <div class="entry-top"><div><h3>Philip Morris International</h3>
+   <p class="role">Commercial Intern</p>
+   </div>
+   <p class="dates">Jun. 2026 – Aug. 2026<br>Taipei, Taiwan</p></div>
+   <p class="tags">Business Development · Sales · Market Validation · Process Optimization</p>
+   <div class="metric"><strong>≈ 1 month → 1 day</strong><span>Prospecting work</span></div>
+   <p class="summary">Redesigned manual prospecting through a two-month business development optimization initiative, combining digital screening with field market validation.</p>
+   <ul class="contributions"><li><strong>Business Development Optimization:</strong> Redesigned the lead-generation process and built a digital screening workflow that reduced approximately one month of manual prospecting work to one day.</li><li><strong>Market Validation:</strong> Conducted field visits to prospective merchants to validate leads, observe market conditions, and engage directly with business owners.</li><li><strong>Sales Prioritization:</strong> Structured multiple data sources to identify, screen, and prioritize high-potential venues for sales outreach.</li><li><strong>Data Management:</strong> Proposed a Power Platform and Dataverse-based framework to centralize lead information and support scalable business development.</li></ul>
+   
+  </article><article class="entry experience-entry ">
+   <div class="company-logos"><img src="./assets/logos/everytime.png" alt="Everytime" width="88" height="88" loading="lazy"><img src="./assets/logos/vinu.png" alt="Vinu Labs" width="88" height="88" loading="lazy"></div>
+   <div class="entry-top"><div><h3>Everytime / Vinu Labs</h3>
+   <p class="role">Market Entry &amp; Product Operations Intern</p>
+   </div>
+   <p class="dates">Jun. 2026 – Present<br>Remote, Korea</p></div>
+   <p class="tags">Market Entry · Competitive Intelligence · Product Localization · Data Automation</p>
+   
+   <p class="summary">Supported a Korean startup’s expansion into Taiwan through university-market research, competitor monitoring, product localization, and course-data collection.</p>
+   <ul class="contributions"><li><strong>Market Entry Analysis:</strong> Analyzed university environments, student behavior, and campus trends to support Everytime’s expansion into Taiwan.</li><li><strong>Competitive Intelligence:</strong> Monitored student communities and competitor activities, translating market signals into recommendations for growth and positioning.</li><li><strong>Product Localization:</strong> Evaluated UI/UX flows and local student behavior, recommending adjustments to improve usability and fit the Taiwan market.</li><li><strong>Data Automation:</strong> Built web-scraping workflows to collect and structure university course data, reducing repetitive manual work.</li></ul>
+   
+  </article><article class="entry experience-entry ">
+   
+   <div class="entry-top"><div><h3>CET Academic Programs</h3>
+   <p class="role">Marketing and Content Intern</p>
+   </div>
+   <p class="dates">Aug 2025 – Dec 2025</p></div>
+   <p class="tags">Customer Research · Service Improvement · Cross-cultural Operations</p>
+   
+   <p class="summary">Analyzed student needs and expectation gaps to recommend service improvements, while coordinating international students, local partners, and internal teams.</p>
+   <ul class="contributions"><li><strong>User &amp; Market Research:</strong> Analyzed student feedback and online discussions to identify decision factors, recurring concerns, and expectation gaps in study-abroad experiences.</li><li><strong>Service Improvement:</strong> Synthesized student insights into recommendations on communication, expectation-setting, and local support.</li><li><strong>Cross-cultural Operations:</strong> Coordinated international students, local partners, and internal teams to resolve operational issues.</li><li><strong>Partner Data Management:</strong> Restructured 250+ partner records to improve information retrieval and internal coordination.</li></ul>
+   
+  </article><article class="entry experience-entry ">
+   
+   <div class="entry-top"><div><h3>National Center for Theoretical Sciences (NCTS) Mathematics</h3>
+   <p class="role">Project Assistant</p>
+   </div>
+   <p class="dates">Feb 2026 – Present</p></div>
+   <p class="tags">Project Coordination · International Collaboration · Academic Operations</p>
+   
+   <p class="summary">Support academic events and research-related operations involving domestic and international scholars, coordinating administrative processes and cross-functional communication.</p>
+   <ul class="contributions"></ul>
+   
+  </article></div></section><section class="section" id="projects"><h2>Selected Projects</h2><div><article class="entry  ">
+   
+   <div class="entry-top"><div><h3>Audience Insight &amp; Program Optimization</h3>
+   
+   </div>
+   <p class="dates">Aug 2025 – Dec 2025 | CET Academic Programs</p></div>
+   <p class="tags">User Research · Data Synthesis · Operational Strategy · Problem Solving</p>
+   
+   <p class="summary">Analyzed end-of-term user evaluation data (N=68) to identify student pain points and provide data-backed operational recommendations for program improvement.</p>
+   <details><summary>View details</summary><ul class="contributions"><li><strong>Research Question:</strong> Which gaps in student expectations and local support should guide program improvements?</li><li><strong>My Role</strong>: Synthesized quantitative ratings and qualitative open-ended responses from 68 participants.</li><li><strong>Key Insights</strong>: Identified critical operational pain points, such as a mismatch in internship expectations and housing cleaning privacy issues.</li><li><strong>Data-Backed Recommendations</strong>: Proposed an &#39;opt-in/opt-out&#39; cleaning SOP and stricter expectation-alignment guidelines for internships.</li></ul><a class="resource" href="./assets/CET_User_Research_Report.pdf" target="_blank" rel="noopener noreferrer">View document ↗</a></details>
+   
+  </article><article class="entry  ">
+   
+   <div class="entry-top"><div><h3>Breakfast Club — User Needs Analysis &amp; Product Design</h3>
+   
+   </div>
+   <p class="dates">School Project | Course: Project Design &amp; Evaluation</p></div>
+   <p class="tags">User Research · Statistical Analysis · Audience Segmentation · Product Strategy</p>
+   
+   <p class="summary">Researched breakfast habits among 62 students, identified behavioral barriers, and translated findings into product requirements for a digital habit-support service.</p>
+   <details><summary>View details</summary><ul class="contributions"><li><strong>User Research:</strong> Conducted research with 62 students to understand breakfast habits, behavioral barriers, and participation drivers.</li><li><strong>Analysis:</strong> Used chi-square and Mann–Whitney U tests to explore patterns in student behavior and segment differing needs.</li><li><strong>Requirements:</strong> Translated motivational and meal-quality needs into habit-tracking and health-information features.</li><li><strong>Solution Design:</strong> Co-developed a digital solution combining a web app and messaging support to encourage student engagement.</li></ul><a class="resource" href="./assets/Breakfast_User_Research_Report.pdf" target="_blank" rel="noopener noreferrer">View document ↗</a></details>
+   
+  </article></div></section><section class="section" id="leadership"><h2>Leadership &amp; Activities</h2><div><article class="entry  ">
+   
+   <div class="entry-top"><div><h3>NTU College of Social Sciences Student Association</h3>
+   <p class="role">Vice President</p>
+   </div>
+   <p class="dates">2025 – Present</p></div>
+   <p class="tags">Student Needs · Stakeholder Coordination · Formal Procedures</p>
+   
+   <p class="summary">Translated student concerns into feasible campus-service proposals, coordinating university offices and student representatives.</p>
+   <details><summary>View details</summary><ul class="contributions"><li><strong>Risk Management</strong>: Proposed a risk management framework and deposit SOP to address locker access disputes, successfully restoring student usage rights.</li><li><strong>Public Infrastructure Advocacy</strong>: Negotiated for the installation of a public printer to improve access to academic resources and daily convenience for students.</li><li><strong>Campus Privacy Improvement</strong>: Pushed forward a campus privacy project, including the addition of urinal partitions to improve usability and comfort.</li></ul></details>
+   
+  </article><article class="entry  ">
+   
+   <div class="entry-top"><div><h3>NTU Breakdance Club</h3>
+   <p class="role">Vice President, PR &amp; Sponsorship</p>
+   </div>
+   <p class="dates">2024 – 2025</p></div>
+   <p class="tags">Event Execution · Sponsorship · Cross-campus Coordination</p>
+   
+   <p class="summary">Rebranded and relaunched Nerds War, coordinating university teams, sponsors, promotion, and event operations; used surveys and past participation data to support planning.</p>
+   <details><summary>View details</summary><ul class="contributions"><li><strong>Demand Forecasting</strong>: Used survey responses and historical participation patterns to support demand estimation and inventory planning.</li><li><strong>Sponsorship Negotiation</strong>: Helped secure sponsorship support from brands including Red Bull, Monster Energy, and Taiwan Beer through proposal coordination.</li><li><strong>Event Promotion</strong>: Supported promotional planning for large-scale events involving over 200 participants and cross-campus collaboration.</li></ul><a class="resource" href="https://www.instagram.com/nerds_war/" target="_blank" rel="noopener noreferrer">View event ↗</a></details>
+   
+  </article></div></section>
+<section class="section" id="skills"><h2>Core Skills</h2><ul class="skills"><li><strong>Business &amp; Research:</strong> Business Development, Market Research, Competitive Analysis, Customer Insight, Process Improvement, Product Operations</li><li><strong>Analysis &amp; Digital Tools:</strong> Excel, SQL, Power BI, Power Platform, n8n, Web Scraping, Google Analytics</li><li><strong>Product &amp; Operations:</strong> Product Localization, Workflow Design, Data Management, Cross-functional Coordination, Requirement Gathering</li><li><strong>Communication:</strong> Stakeholder Engagement, Bilingual Communication, Presentation, Insight Synthesis</li><li><strong>Languages:</strong> Mandarin Chinese — Native; English — Fluent</li></ul></section>
+<section class="section" id="contact"><h2>Contact</h2><div><p class="contact-copy">I am interested in opportunities across business strategy, market entry, business development, and product operations, where I can combine structured analysis, market understanding, and practical execution.</p><div class="contact-links"><a href="mailto:b12310052@g.ntu.edu.tw">b12310052@g.ntu.edu.tw</a><a href="tel:+886965281270">+886-965-281-270</a></div></div></section></main>
+<footer>© 2026 James Chan</footer></body></html>
