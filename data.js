@@ -29,7 +29,7 @@ const siteData = {
           "company": "Philip Morris International",
           "role": "Commercial Intern",
           "location": "Taipei, Taiwan",
-          "period": "Jun. 2026 – Aug. 2026",
+          "period": "Jul. 2026 – Aug. 2026",
           "tags": [
             "Business Development",
             "Sales",
