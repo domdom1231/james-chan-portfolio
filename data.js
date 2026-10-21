@@ -11,15 +11,15 @@ const siteData = {
     },
     "hero": {
       "name": "HsinChun Chan (James)",
-      "title": "Business Development, Market Entry & Product Operations",
-      "subtitle": "Combining training in Social Work and Economics with hands-on experience in business development, market research, new-market entry, and process optimization."
+      "title": "Business, Analytics & Operations",
+      "subtitle": "Applying data, technology, and market insights to improve decisions, workflows, and business outcomes."
     },
     "about": {
       "title": "About",
       "description": [
         "I am an NTU student majoring in Social Work with a minor in Economics, with internship experience across multinational companies, startups, and international education.",
         "Through roles at PMI, Everytime, and CET Academic Programs, I have worked on business development optimization, Taiwan market entry, customer and competitor research, and service improvement. My experience ranges from building data-driven lead generation processes and conducting field market validation to analyzing student communities and translating user insights into practical recommendations.",
-        "I am particularly interested in solving business problems that require structured analysis, market understanding, and cross-functional execution, while using technology and data as practical tools to improve decision-making."
+        "I enjoy understanding how organizations operate, from customer needs and market dynamics to internal processes, and translating research, data, and cross-functional collaboration into practical improvements. I am interested in roles where analytical thinking and hands-on execution create measurable business value."
       ]
     },
     "experience": {
@@ -213,24 +213,24 @@ const siteData = {
     "skills": {
       "title": "Core Skills",
       "items": [
-        "**Business & Research:** Business Development, Market Research, Competitive Analysis, Customer Insight, Process Improvement, Product Operations",
-        "**Analysis & Digital Tools:** Excel, SQL, Power BI, Power Platform, n8n, Web Scraping, Google Analytics",
-        "**Product & Operations:** Product Localization, Workflow Design, Data Management, Cross-functional Coordination, Requirement Gathering",
-        "**Communication:** Stakeholder Engagement, Bilingual Communication, Presentation, Insight Synthesis",
-        "**Languages:** Mandarin Chinese — Native; English — Fluent"
+        "**Business & Research:** Market Research, Competitive Analysis, Customer Insights, Business Development, Process Improvement",
+        "**Data & Analytics:** Excel, PowerPoint, SQL, Power BI, Data Analysis, Data Visualization",
+        "**Digital & Automation:** Power Platform, Power Automate, n8n, API Integration, Web Scraping",
+        "**Operations & Collaboration:** Workflow Design, Product Localization, Data Management, Stakeholder Coordination, Cross-functional Collaboration",
+        "**Languages:** Mandarin Chinese (Native), English (Fluent)"
       ]
     },
     "contact": {
       "title": "Contact",
-      "description": "I am interested in opportunities across business strategy, market entry, business development, and product operations, where I can combine structured analysis, market understanding, and practical execution.",
+      "description": "I am interested in commercial, analytical, and operational roles where market understanding, data, technology, and collaboration can support better decisions and measurable results.",
       "email": "b12310052@g.ntu.edu.tw",
       "phone": "+886-965-281-270",
       "linkedin": null,
       "resume": null
     },
     "metadata": {
-      "title": "James Chan | Business Development, Market Entry & Product Operations",
-      "description": "I am an NTU student majoring in Social Work with a minor in Economics, with internship experience across multinational companies, startups, and international education. Combining training in Social Work and Economics with hands-on experience in business development, market research, new-market entry, and process optimization."
+      "title": "James Chan | Business, Analytics & Operations",
+      "description": "NTU Social Work student minoring in Economics, with experience in business development, market research, data analysis, process improvement, and international operations."
     }
   },
   "zh": {
@@ -245,8 +245,8 @@ const siteData = {
     },
     "hero": {
       "name": "詹新群 (James)",
-      "title": "業務開發、市場進入與產品營運",
-      "subtitle": "結合社會工作與經濟學訓練，投入業務開發、市場研究、新市場進入與流程改善。",
+      "title": "商業、數據分析與營運",
+      "subtitle": "結合市場洞察、資料分析與數位工具，改善商業決策、工作流程與營運成果。",
       "cta": "查看經歷"
     },
     "about": {
@@ -254,7 +254,7 @@ const siteData = {
       "description": [
         "我是國立臺灣大學社會工作學系學生，輔修經濟學，具備跨國企業、新創公司與國際教育機構的實習經驗。",
         "在 PMI、Everytime 與 CET Academic Programs，我參與業務開發流程優化、臺灣市場進入、顧客與競爭者研究，以及服務改善。工作涵蓋建立以資料為基礎的潛在客戶開發流程、實地拜訪驗證市場、分析學生社群，並將使用者洞察轉化為具體建議。",
-        "我關注需要結構化分析、市場理解與跨部門執行的商業問題，並將科技與資料作為改善決策的實用工具。"
+        "我重視理解企業如何運作，從市場與顧客需求到內部流程，透過研究、資料分析、數位工具及跨部門合作，提出可執行的改善方案，讓分析真正產生實務價值。"
       ]
     },
     "experience": {
@@ -264,7 +264,7 @@ const siteData = {
           "company": "Philip Morris International",
           "role": "Commercial Intern",
           "location": "臺灣臺北",
-          "period": "2026.06 – 2026.08",
+          "period": "2026.07 – 2026.08",
           "tags": [
             "業務開發",
             "銷售",
@@ -448,24 +448,24 @@ const siteData = {
     "skills": {
       "title": "技能專長",
       "items": [
-        "**商業與研究：** 業務開發、市場研究、競爭分析、顧客洞察、流程改善、產品營運",
-        "**分析與數位工具：** Excel、SQL、Power BI、Power Platform、n8n、網頁資料蒐集、Google Analytics",
-        "**產品與營運：** 產品在地化、工作流程設計、資料管理、跨部門協作、需求蒐集",
-        "**溝通表達：** 利害關係人溝通、雙語溝通、簡報、洞察彙整",
-        "**語言：** 中文 — 母語；英文 — 流利"
+        "**商業與研究：** 市場研究、競爭分析、顧客洞察、業務開發、流程改善",
+        "**數據與分析：** Excel、PowerPoint、SQL、Power BI、資料分析、資料視覺化",
+        "**數位與自動化：** Power Platform、Power Automate、n8n、API 串接、網頁資料蒐集",
+        "**營運與協作：** 工作流程設計、產品在地化、資料管理、利害關係人協調、跨部門合作",
+        "**語言：** 中文（母語）、英文（流利）"
       ]
     },
     "contact": {
       "title": "聯絡資訊",
-      "description": "我期待投入商業策略、市場進入、業務開發與產品營運相關機會，結合結構化分析、市場理解與實務執行。",
+      "description": "我期待投入商業、分析與營運相關職能，結合市場理解、資料及科技應用、跨部門合作，協助企業改善決策與營運成果。",
       "email": "b12310052@g.ntu.edu.tw",
       "phone": "+886-965-281-270",
       "linkedin": null,
       "resume": null
     },
     "metadata": {
-      "title": "James Chan | 業務開發、市場進入與產品營運",
-      "description": "我是國立臺灣大學社會工作學系學生，輔修經濟學，具備跨國企業、新創公司與國際教育機構的實習經驗。 結合社會工作與經濟學訓練，投入業務開發、市場研究、新市場進入與流程改善。"
+      "title": "James Chan | 商業、數據分析與營運",
+      "description": "國立臺灣大學社會工作學系學生、經濟學輔系，具備業務開發、市場研究、資料分析、流程改善及跨國團隊協作經驗。"
     }
   }
 };
